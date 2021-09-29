@@ -5,9 +5,11 @@ import styled from "styled-components";
 
 export const Login = () => {
   const [hide, setHide] = useState(true);
+  const [contentChange, setContentChange] = useState(false);
 
   const handleHide = () => {
     setHide(true);
+    setContentChange(false);
   };
 
   const LoginDiv = styled.div`
@@ -38,23 +40,72 @@ export const Login = () => {
             src="https://static.cure.fit/assets/images/curefit-name.svg"
             alt="name"
           />
+          {!contentChange ? (
+            <>
+              <input type="phone" placeholder="Enter your phone number" />
+              <button className={styles["login__continueBtn"]}>Continue</button>
+              <li>
+                By Continuing you agree to the
+                <em style={{ color: "red" }}>Terms of Services</em> and
+                <em style={{ color: "red" }}>Privacy policy</em>.
+              </li>
 
-          <input type="phone" placeholder="Enter your phone number" />
-          <button className={styles["login__continueBtn"]}>Continue</button>
-          <li>
-            By Continuing you agree to the
-            <em style={{ color: "red" }}>Terms of Services</em> and
-            <em style={{ color: "red" }}>Privacy policy</em>.
-          </li>
-
-          <button className={styles["login__google"]}>
-            Continue with
-            <span>
-              <FaGoogle />
-              <FaFacebookF />
-              <FaEnvelope />
-            </span>
-          </button>
+              <button
+                onClick={() => setContentChange(true)}
+                className={styles["login__google"]}
+              >
+                Continue with
+                <span>
+                  <FaGoogle />
+                  <FaFacebookF />
+                  <FaEnvelope />
+                </span>
+              </button>
+            </>
+          ) : (
+            <>
+              <button
+                className={`${styles["google"]} ${styles["login__options"]} `}
+                style={{ margin: "10px auto" }}
+              >
+                <img
+                  src="https://static.cure.fit/assets/images/google-new.svg"
+                  alt="google"
+                />
+                <h4 style={{ color: "white" }}>Sign in with Google</h4>
+              </button>
+              <button
+                className={`${styles["facebook"]} ${styles["login__options"]} `}
+                style={{ margin: "10px auto" }}
+              >
+                <img
+                  src="https://static.cure.fit/assets/images/facebook-new.svg"
+                  alt="facebook"
+                />
+                <h4 style={{ color: "white" }}>Sign in with Facebook</h4>
+              </button>
+              <button
+                className={styles["login__options"]}
+                style={{ color: "black", margin: "10px auto" }}
+              >
+                <img
+                  src="https://static.cure.fit/assets/images/mail-new.svg"
+                  alt="email"
+                />
+                <h4>Sign in with email</h4>
+              </button>
+              <button
+                className={styles["login__options"]}
+                style={{ color: "black", margin: "10px auto" }}
+              >
+                <img
+                  src="https://static.cure.fit/assets/images/user-new.svg"
+                  alt="signUp"
+                />
+                <h4>Create new account</h4>
+              </button>
+            </>
+          )}
         </div>
       </LoginDiv>
       <button onClick={() => setHide(false)}>click Me</button>
