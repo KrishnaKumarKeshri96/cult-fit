@@ -1,12 +1,11 @@
 import "./App.css";
 import { CartPage } from "./Components/Cart/CartPage";
+import { Login } from "./Components/Login/Login";
 
 function App() {
-  //testing
-  //test
-  //test slack notificatin
   return (
     <div>
+      <Login />
       <CartPage />
     </div>
   );
