@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Store.module.css";
 import Grid from "../../components/Grid";
 import Carousel from "./Carousel";
+import ProductCard from "./ProductCard";
 
 // Image arrays
 const mainCat = [
@@ -69,6 +70,18 @@ const Store = () => {
         <div className={styles.bannerTitle}>Spotlight</div>
         <div style={{ gap: "2%" }} className={styles.gridContainer}>
           <Grid list={spotlight.map((el) => `img/store/${el}.jpeg`)} />
+        </div>
+      </div>
+      <div className={styles.maxWidthContainer}>
+        <div className={styles.productListHeader}>
+          <div className="spaceBetween"></div>
+        </div>
+        <div style={{ gap: "1%" }} className={styles.gridContainer}>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
         </div>
       </div>
     </>
