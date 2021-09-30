@@ -1,6 +1,7 @@
 import "./App.css";
 // import Store from "./components/store/Store";
-import Cult from "./components/cult/Cult";
+// import Cult from "./components/cult/Cult";
+import CultPacks from "./components/cultPacks/CultPacks";
 
 function App() {
   //testing
@@ -8,7 +9,9 @@ function App() {
   //test slack notificatin
   return (
     <div className="App">
-      <Cult />
+      {/* <Store /> */}
+      {/* <Cult /> */}
+      <CultPacks />
     </div>
   );
 }
