@@ -4,7 +4,7 @@ import { useState } from "react";
 import styled from "styled-components";
 
 export const Login = () => {
-  const [hide, setHide] = useState(true);
+  const [hide, setHide] = useState(false);
   const [contentChange, setContentChange] = useState(false);
 
   const handleHide = () => {
@@ -19,6 +19,7 @@ export const Login = () => {
     width: 100%;
     height: 100%;
     position: absolute;
+
     z-index: 2000;
     background-color: rgba(128, 128, 128, 0.555);
   `;

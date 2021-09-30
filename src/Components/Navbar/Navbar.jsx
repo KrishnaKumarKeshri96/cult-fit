@@ -1,4 +1,7 @@
-import "./Navbar.css";
+import styles from "./navbar.module.css";
+
+import { Link } from "react-router-dom";
+
 import logo from "../../images/logo.svg";
 import cultIcon from "../../images/cult-icon.svg";
 import liveFit from "../../images/Livefit.svg";
@@ -11,44 +14,44 @@ import cart from "../../images/cart-image.svg";
 
 export const Navbar = () => {
   return (
-    <header className="nav_section">
+    <header className={styles.nav_section}>
       <img src={logo} alt="Logo" />
       <nav>
-        <span>
+        <Link>
           <img src={cultIcon} alt="" />
           Cult
-        </span>
-        <span>
+        </Link>
+        <Link>
           <img src={liveFit} alt="" />
           Live
-        </span>
-        <span>
+        </Link>
+        <Link>
           <img src={eatIcon} alt="" />
           Eat
-        </span>
-        <span>
+        </Link>
+        <Link>
           <img src={mindIcon} alt="" />
           Mind
-        </span>
-        <span>
+        </Link>
+        <Link>
           <img src={carefit} alt="" />
           Care
-        </span>
-        <span>
+        </Link>
+        <Link>
           <img src={storeIcon} alt="" />
           Store
-        </span>
+        </Link>
       </nav>
 
-      <div className="right_section">
-        <span>Bangalore</span>
+      <div className={styles.right_section}>
+        <Link>Bangalore</Link>
         <div>
           <img src={userImg} alt="" />
-          <span>Login</span>
+          <Link to="/login">Login</Link>
         </div>
-        <span>
+        <Link>
           <img src={cart} alt="Cart" />
-        </span>
+        </Link>
       </div>
     </header>
   );
