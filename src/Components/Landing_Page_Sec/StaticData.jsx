@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./static.css";
 
 import appStore from "../../images/app-store.svg";
 

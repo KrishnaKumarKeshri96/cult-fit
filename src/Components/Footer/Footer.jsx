@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./footer.css";
 import appStore from "../../images/app-store.svg";
 
 import playStore from "../../images/play-store.svg";

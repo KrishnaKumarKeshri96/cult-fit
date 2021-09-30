@@ -1,7 +1,7 @@
 import "./herosec.css";
 import styled from "styled-components";
-import { useEffect, useState } from "react";
-import { CSSTransition } from "react-transition-group";
+// import { useEffect, useState } from "react";
+// import { CSSTransition } from "react-transition-group";
 
 import { Link } from "react-router-dom";
 
@@ -122,7 +122,7 @@ export const HeroSec = () => {
         <div class="top_section">
           <img src="images/live-brand.svg" alt="Cult" />
           <div class="sub_heading_section">
-            <h3 class="subheading">At-home health & fitness made easy</h3>
+            <h3 class="subheading">{"At-home health & fitness made easy"}</h3>
             <a href="">
               Explore
               <img src="images/back-arrow-pink.svg" alt="Arrow" />
@@ -145,8 +145,8 @@ export const HeroSec = () => {
               <h3>Mindfulness</h3>
               <div class="content">
                 <p>
-                  Relax your mind, body and soul with guided meditation & reach
-                  your full potential.
+                  {` Relax your mind, body and soul with guided meditation & reach
+                  your full potential.`}
                 </p>
                 <button class="button_style1">Explore</button>
               </div>
