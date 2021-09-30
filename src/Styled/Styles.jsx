@@ -40,7 +40,7 @@ export const ContentDiv = styled.div`
   }
   // height: 700px;
   // width: 600px;
-  border: green solid 1px;
+  // border: green solid 1px;
   float: right;
   margin-left: 620px;
   margin-top: 50px;
@@ -215,4 +215,45 @@ export const Loc = styled.div`
 export const DateCard = styled.div`
   display: flex;
   flex-direction: row;
+`;
+
+export const SmallBanner = styled.div`
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  display: flex;
+  flex-direction: row;
+`;
+
+export const SmallBannerImg = styled.div`
+  height: 100px;
+  width: 200px;
+`;
+
+export const Slots = styled.div`
+  display: fflex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+`;
+
+export const SlotDiv = styled.div`
+  margin-right: 20px;
+  text-align: left;
+  font-weight: bold;
+`;
+
+export const GreenBtn = styled.button`
+  color: #36ba45;
+  border: #36ba45 solid 1px;
+  height: 40px;
+  width: 140px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
