@@ -1,7 +1,8 @@
 import "./App.css";
 // import Store from "./components/store/Store";
 // import Cult from "./components/cult/Cult";
-import CultPacks from "./components/cultPacks/CultPacks";
+// import CultPacks from "./components/cultPacks/CultPacks";
+import PackCheckout from "./components/packCheckout/PackCheckout";
 
 function App() {
   //testing
@@ -11,7 +12,8 @@ function App() {
     <div className="App">
       {/* <Store /> */}
       {/* <Cult /> */}
-      <CultPacks />
+      {/* <CultPacks /> */}
+      <PackCheckout />
     </div>
   );
 }

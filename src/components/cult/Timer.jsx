@@ -61,7 +61,7 @@ const Timer = () => {
         <div className="time">{seconds > 9 ? seconds : `0${seconds}`}</div>
         <div className="unit">Sec</div>
       </div>
-      <img src="img/cult/Vector.svg" alt="Go" />
+      {/* <img src="img/cult/Vector.svg" alt="Go" /> */}
     </TimerContainer>
   );
 };
@@ -78,12 +78,16 @@ const TimerContainer = styled.div`
 
   & .time {
     display: flex;
-    font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
-      sans-serif;
-    font-size: 24px;
-    color: #000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #fb2727;
     min-width: 30px;
     justify-content: center;
+    padding-top: 5px;
   }
 
   & .unit {
@@ -92,7 +96,8 @@ const TimerContainer = styled.div`
     font-size: 12px;
     color: #989898;
     text-align: center;
-    margin-top: -5px;
+    margin-top: -15px;
+    padding-bottom: 15px;
   }
 
   & img {
@@ -105,8 +110,11 @@ const TimerContainer = styled.div`
 `;
 
 const Seperator = styled.span`
-  font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
-    sans-serif;
-  font-size: 24px;
-  color: #999;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #fb2727;
 `;

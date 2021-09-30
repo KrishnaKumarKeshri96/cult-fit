@@ -5,14 +5,14 @@ img {
   display: inline-block;
   width: 50%;
   position: sticky;
-  padding: 10px 20px 20px 15%;
+  padding: 10px 10% 20px;
   vertical-align: top;
   top: 5vh;
 }
 .rightContainer {
   display: inline-block;
   width: 50%;
-  padding: 10px 15% 20px 0;
+  padding: 40px 10% 20px 0;
 }
 .breadCrumb span {
   cursor: pointer;
@@ -30,7 +30,7 @@ img {
   margin: 15px 0;
 }
 .topContainer h1 {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 700;
 }
 .price {
@@ -83,6 +83,10 @@ img {
   width: -webkit-fill-available;
   display: flex;
   justify-content: space-between;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+  color: #404040;
 }
 .button {
   height: 40px;
@@ -94,7 +98,7 @@ img {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-image: linear-gradient(180deg, #fd7280, #ff2f73);
+  background: linear-gradient(264.55deg, #ff0f67 -7.3%, #fc733c 103.27%);
   color: #fff;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -147,10 +151,16 @@ img {
 input[type="text"] {
   border: none;
   outline: none;
-  font-size: 16px;
   font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+  color: #404040;
   width: 100%;
   min-width: 80px;
+}
+hr {
+  border: none;
+  border-bottom: 0.5px solid #e0dcdc;
 }
 @media only screen and (max-width: 830px) {
   .leftContainer {

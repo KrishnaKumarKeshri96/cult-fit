@@ -35,7 +35,7 @@ const CultPacks = () => {
                   <img src="img/cultPacks/location.svg" alt="locate" />
                   <div className={styles.dropDownLocation}>
                     <p>Cult Satellite</p>
-                    <img src="img/cultPacks/down-arrow.svg" alt="arrow" />
+                    {/* <img src="img/cultPacks/down-arrow.svg" alt="arrow" /> */}
                   </div>
                 </div>
               </div>
