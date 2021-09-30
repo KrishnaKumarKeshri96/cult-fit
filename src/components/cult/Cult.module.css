@@ -16,6 +16,11 @@
   /* padding: 5px 5%; */
   /* min-height: fit-content; */
 }
+@media only screen and (max-width: 600px) {
+  .fixWidthContainer {
+    width: 90%;
+  }
+}
 .fixWidthContainer img {
   width: 100%;
   /* margin-bottom: 5px; */
@@ -78,16 +83,22 @@
     sans-serif;
 }
 .blueWrapper h3 span {
-  margin: 0px 10px;
+  margin: 0px 1%;
   font-size: 16px;
 }
 .line div {
   display: inline-block;
   margin-bottom: 5px;
   height: 1px;
-  width: 35%;
+  width: 15%;
   background-color: rgb(255, 255, 255);
 }
+@media only screen and (max-width: 480px) {
+  .line div {
+    width: 6%;
+  }
+}
+
 .benifits {
   display: flex;
   justify-content: space-around;
@@ -95,6 +106,7 @@
 }
 .benifits div {
   display: flex;
+  flex-wrap: wrap;
   gap: 3px;
 }
 .benifits p {

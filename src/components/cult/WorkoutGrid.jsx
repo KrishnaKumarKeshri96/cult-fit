@@ -22,7 +22,7 @@ export default WorkoutGrid;
 const Grid = styled.div`
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(4, 24%);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 30px;
 `;
 

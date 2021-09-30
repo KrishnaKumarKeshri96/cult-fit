@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Timer = () => {
-  const [hours, setHours] = useState();
-  const [minutes, setMinutes] = useState();
-  const [seconds, setSeconds] = useState();
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
   let interval;
   const startTimer = () => {
-    const targetDate = new Date("September 30,2021").getTime();
+    const targetDate = new Date("October 6,2021").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -24,6 +25,7 @@ const Timer = () => {
       if (distance < 0) {
         clearInterval(interval);
       } else {
+        setDays(day);
         setHours(hour);
         setMinutes(minute);
         setSeconds(second);
@@ -40,6 +42,11 @@ const Timer = () => {
 
   return (
     <TimerContainer>
+      <div className="timer">
+        <div className="time">{days}</div>
+        <div className="unit">Day</div>
+      </div>
+      <Seperator>&nbsp;&nbsp;:&nbsp;&nbsp;</Seperator>
       <div className="timer">
         <div className="time">{hours}</div>
         <div className="unit">Hr</div>

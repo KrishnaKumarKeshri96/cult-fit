@@ -59,8 +59,18 @@ const SubscriptionCard = () => {
 export default SubscriptionCard;
 
 //Styled components;
+
+const Subscriptions = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1%;
+  padding-bottom: 40px;
+`;
+
 const Subscription = styled.div`
   width: 32%;
+  min-width: 250px;
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -141,10 +151,4 @@ const Subscription = styled.div`
       font-weight: bold;
     }
   }
-`;
-
-const Subscriptions = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 40px;
 `;

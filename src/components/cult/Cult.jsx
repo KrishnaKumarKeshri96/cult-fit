@@ -32,6 +32,7 @@ const Cult = () => {
         <img src="img/cult/cult3.png" alt="Best GYMs" />
       </div>
 
+      {/*<------------------ Blue Wrapper -------------->*/}
       <div className={styles.maxWidthContainer}>
         <div className={styles.blueWrapper}>
           <div className={styles.fixWidthContainer}>
