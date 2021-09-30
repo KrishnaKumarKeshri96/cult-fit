@@ -1,4 +1,12 @@
 import { Link } from "react-router-dom";
+import appStore from "../../images/app-store.svg";
+
+import playStore from "../../images/play-store.svg";
+import cult from "../../images/cult-logo-white.svg";
+import fb from "../../images/facebook_icon_white.svg";
+import twitter from "../../images/twitter_icon_white.svg";
+import insta from "../../images/instagram_icon_white.svg";
+import youtube from "../../images/youtube_icon_white_1.svg";
 
 export const Footer = () => {
   return (
@@ -6,7 +14,7 @@ export const Footer = () => {
       <div class="container">
         <div class="top_section">
           <div class="logo_section">
-            <img src="images/cult-logo-white.svg" alt="Cult logo" />
+            <img src={cult} alt="Cult logo" />
             <p>
               {`At cult.fit, we make group workouts fun, daily food healthy &
               tasty, mental fitness easy with yoga & meditation, and medical &
@@ -50,10 +58,10 @@ export const Footer = () => {
           </div>
           <div class="download_app">
             <Link to="/">
-              <img src="images/app-store.svg" alt="App store" />
+              <img src={appStore} alt="App store" />
             </Link>
             <Link to="/">
-              <img src="images/play-store.svg" alt="Play store" />
+              <img src={playStore} alt="Play store" />
             </Link>
           </div>
         </div>
@@ -128,16 +136,16 @@ export const Footer = () => {
           </div>
           <div class="social_icons">
             <Link to="/">
-              <img src="images/facebook_icon_white.svg" alt="" />
+              <img src={fb} alt="" />
             </Link>
             <Link to="/">
-              <img src="images/twitter_icon_white.svg" alt="" />
+              <img src={twitter} alt="" />
             </Link>
             <Link to="/">
-              <img src="images/instagram_icon_white.svg" alt="" />
+              <img src={insta} alt="" />
             </Link>
             <Link to="/">
-              <img src="images/youtube_icon_white_1.svg" alt="" />
+              <img src={youtube} alt="" />
             </Link>
           </div>
         </div>
