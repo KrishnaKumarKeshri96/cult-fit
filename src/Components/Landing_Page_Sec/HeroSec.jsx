@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 
+import { Link } from "react-router-dom";
+
 export const HeroSec = () => {
   const SpanD = styled.span`
     display: inline-block;
@@ -36,12 +38,12 @@ export const HeroSec = () => {
         </div>
       </div>
       <div class="banner_section container">
-        <a href="https://www.cult.fit/lp/BLACK_Big300_sale?pageId=BLACK_Big300_sale&pageType=listpage">
+        <Link to="/">
           <img
             src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_1360:400/dpr_2/image/vm/d60601b2-00c4-4f7d-8245-457dc376ad3b.png"
             alt="Sale banner"
           />
-        </a>
+        </Link>
       </div>
 
       <div class="home_card_section container">
