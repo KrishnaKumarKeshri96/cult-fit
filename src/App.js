@@ -4,12 +4,13 @@ import { Login } from "./Components/Login/Login";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { HeroSec } from "./Components/Landing_Page_Sec/HeroSec";
 import { Route } from "react-router-dom";
+import { Footer } from "./Components/Footer/Footer";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <HeroSec />
+      <Footer />
 
       {/* <Route path="/login">
         <Login />
