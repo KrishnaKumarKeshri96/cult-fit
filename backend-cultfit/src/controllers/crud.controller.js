@@ -19,7 +19,7 @@ const getOne = (model) => async (req, res) => {
 const post = (model) => async (req, res) => {
   try {
     const items = await model.create(req.body);
-    return res.send(items);
+    return res.status(201).send(items);
   } catch (err) {
     return res.status(400).send(err.message);
   }

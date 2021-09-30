@@ -7,7 +7,11 @@ app.use(express.json());
 
 const userController = require("./controllers/user.controller");
 
+const brandController = require("./controllers/brand.controller");
+
 app.use("/users", userController);
+
+app.use("/brand", brandController);
 
 app.listen("8080", async () => {
   try {

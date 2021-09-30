@@ -134,11 +134,13 @@ body {
 .google {
   background: #4385f4;
   box-shadow: 0 0 2px;
+  cursor: pointer;
 }
 
 .facebook {
   box-shadow: 0 0 2px;
   background: #4267b2;
+  cursor: pointer;
 }
 .signUp__back > button {
   color: #fd306b;
