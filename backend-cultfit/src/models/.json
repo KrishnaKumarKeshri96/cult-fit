@@ -1,88 +1,13 @@
 [{
-    "name": "cult-sport",
-
-    "title":
-"https://static.cure.fit/assets/images/cult-sports.svg" ,
-
-    "subTitle": "Collection of premium athleisure wear" ,
-    "description": "Browse through our collection to help you ace your workouts in style",
-   "products": {
-      "img": [ "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/5c333536-cc72-4e5a-8648-9dcb8006f7c0.png",
- "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/631e1299-7ad1-4e06-b410-f77671c2c540.png",
- "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/dec83eee-b999-4058-ac0f-6d346b8d071a.png"],
-      "title": ["Equipment","Footwear","Apparel"],
-      "description": ["Get your hands on cult branded workout equipment and slay your fitness goals.","Exclusive footgear designed for workouts and leisure use.","Browse through a range of collections that’s been tested on athletes and designed for you."],
-      "btn":["KNOW MORE","KNOW MORE","KNOW MORE"
-    ]
-    }
+    "type": "MEN"
   },{
-    "name": "care-fit",
-
-    "title":
-"https://static.cure.fit/assets/images/care-title.svg" ,
-
-    "subTitle": "Making health easy and accessible" ,
-    "description": "Book online doctor consultations and schedule diagnostic tests at home.",
-   "products": {
-      "img": [ "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0f4c194a-3d2c-453c-8a3a-fdf20bd03699.png",
-"https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/a319056a-2fbb-4d0f-a12d-6b47bf79deef.png","https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d9ef0d11-72e1-4e80-b1df-683a82fd692d.png"],
-      "title": ["Online Doctor Consultation",
- "Home Lab Tests",
- "Online Dietician Consultation"],
-      "description": [
- "Consult with our doctors and specialists like orthopedics, pediatricians and gynaecologists for all your medical needs with minimum wait time.",
- "Assess &amp; monitor your health from the comfort of your home - get full body comprehensive health-checkup with actionable medical and lifestyle care advice.",
- "Our nutritionist will help you manage your health with personalised diets and fitness plans based on your lifestyle preferences."],
-      "btn":["CONSULT NOW","BOOK NOW","CONSULT NOW"
-    ]
-    }
+    "type": "WOMEN"
   },{
-    "name": "mind-fit",
-
-    "title":
-"https://static.cure.fit/assets/images/mind-title.svg" ,
-
-    "subTitle": "Mind and Body fitness" ,
-    "description": "Experience mindfulness with our guided yoga, meditation & therapy sessions.",
-   "products": {
-      "img": [  "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/9f1b091f-b0ee-4920-8172-fb095c2d7a0b.png",
- "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/83ea52e7-666f-4f60-8027-4f03e5bf9605.png",
-"https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/6f98a852-e6ea-463c-8372-49dc8991b952.png"],
-      "title": ["Online Therapy",
-"Meditation",
-"Sleep"
-],
-      "description": [
- "Take care of your mental and emotional fitness in a safe, calm, and non-judgemental environment.",
- "Let go of stressful thoughts and feelings with guided meditations that will relax your mind and body.",
-"Soothing guided meditations, stories and music that will help you sleep better."],
-      "btn":["BOOK NOW","KNOW MORE","KNOW MORE"
-    ]
-    }
-  }]
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
+    "type": "EQUIPMENT"
+  },{
+    "type": "ACCESSORIES"
+  },
+  {
+      "type":"VITAMINS"
+  }
+]
