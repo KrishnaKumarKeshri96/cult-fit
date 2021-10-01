@@ -1,9 +1,15 @@
-import { Breadcrumbs } from "@mui/material";
+// import { Breadcrumbs } from "@mui/material";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AppContext } from "../Contexts/AppContext";
 import {
   BCrumbs,
   Calories,
   ContentDiv,
+  DatesDiv,
+  DatesWrapper,
+  DayNameDiv,
+  DayNumDiv,
   GreenBtn,
   PosterDiv,
   PosterImg,
@@ -12,9 +18,21 @@ import {
   SmallBanner,
   SmallBannerImg,
   WrapperDiv,
+  DownArrow,
+  FilterDiv,
+  SelectCenters,
+  Cross,
+  PopDiv,
+  CentersDiv,
+  MapDiv,
+  Loc,
+  Pink,
 } from "../Styled/Styles";
+import cross from "../Hrx/cross.png";
 
 export const ClassBooking = () => {
+  // const { chooseCenter, setChooseCenter } = useContext(AppContext);
+  const [chooseCenter, setChooseCenter] = useState(false);
   const breadcrumbs = [
     <Link
       underline="hover"
@@ -27,8 +45,121 @@ export const ClassBooking = () => {
     </Link>,
     <Calories>Cult Abids</Calories>,
   ];
+  const handleBookClass = () => {
+    setChooseCenter(!chooseCenter);
+  };
+
+  const handleSelectedCenter = (store) => {
+    // history.push("/workout/classbooking");
+  };
+
+  const locations = [
+    {
+      store_name: "Cult Abids",
+      address:
+        "1st Floor, Above Samsung, Sagar Plaza, Koti, Abids, Hyderabad, Hyderabad",
+      long: "17.387270",
+      lat: "78.478058",
+    },
+    {
+      store_name: "Cult Abids",
+      address:
+        "1st Floor, Above Samsung, Sagar Plaza, Koti, Abids, Hyderabad, Hyderabad",
+      long: "17.387270",
+      lat: "78.478058",
+    },
+    {
+      store_name: "Cult Abids",
+      address:
+        "1st Floor, Above Samsung, Sagar Plaza, Koti, Abids, Hyderabad, Hyderabad",
+      long: "17.387270",
+      lat: "78.478058",
+    },
+    {
+      store_name: "Cult Abids",
+      address:
+        "1st Floor, Above Samsung, Sagar Plaza, Koti, Abids, Hyderabad, Hyderabad",
+      long: "17.387270",
+      lat: "78.478058",
+    },
+    {
+      store_name: "Cult Abids",
+      address:
+        "1st Floor, Above Samsung, Sagar Plaza, Koti, Abids, Hyderabad, Hyderabad",
+      long: "17.387270",
+      lat: "78.478058",
+    },
+    {
+      store_name: "Cult Abids",
+      address:
+        "1st Floor, Above Samsung, Sagar Plaza, Koti, Abids, Hyderabad, Hyderabad",
+      long: "17.387270",
+      lat: "78.478058",
+    },
+    {
+      store_name: "Cult Abids",
+      address:
+        "1st Floor, Above Samsung, Sagar Plaza, Koti, Abids, Hyderabad, Hyderabad",
+      long: "17.387270",
+      lat: "78.478058",
+    },
+    {
+      store_name: "Cult Abids",
+      address:
+        "1st Floor, Above Samsung, Sagar Plaza, Koti, Abids, Hyderabad, Hyderabad",
+      long: "17.387270",
+      lat: "78.478058",
+    },
+  ];
+
   return (
     <>
+      {chooseCenter && (
+        <>
+          <SelectCenters>
+            <Cross onClick={handleBookClass} alt="cross" src={cross}></Cross>
+
+            <PopDiv>
+              <CentersDiv style={{ overflow: "scroll" }}>
+                {locations.map((location) => (
+                  <Loc>
+                    <h3 style={{ textAlign: "left" }}>
+                      {location.store_name}{" "}
+                      <Pink
+                        onClick={() =>
+                          handleSelectedCenter(location.store_name)
+                        }
+                      >
+                        SELECT
+                      </Pink>
+                    </h3>
+
+                    <p style={{ textAlign: "left" }}>{location.address}</p>
+                  </Loc>
+                ))}
+              </CentersDiv>
+              <MapDiv>
+                {/* <Map
+                  locations={locations}
+                  googleApiKey="AIzaSyAXtbGLynY_L4A5FWUx6cY6859BjMvVYeM"
+                ></Map> */}
+                <code>
+                  <iframe
+                    title="s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5109355979366!2d78.47585641418758!3d17.387250907387152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb999576599015%3A0x555db77e57b70678!2sCult%20Abids!5e0!3m2!1sen!2sin!4v1633005771850!5m2!1sen!2sin"
+                    width="600"
+                    height="450"
+                    style={{ border: "0" }}
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </code>
+              </MapDiv>
+            </PopDiv>
+          </SelectCenters>
+        </>
+      )}
+
       <WrapperDiv>
         <PosterDiv>
           <PosterImg
@@ -47,14 +178,14 @@ export const ClassBooking = () => {
             </div>
             <div style={{ marginRight: "5px" }}>Cult Abids</div>
 
-            <div>
+            <DownArrow onClick={handleBookClass}>
               <img
                 alt="opt"
                 src="https://static.cure.fit/assets/images/down-arrow-icon.svg"
               ></img>
-            </div>
+            </DownArrow>
           </div>
-          <BCrumbs>
+          {/* <BCrumbs>
             <Breadcrumbs
               // separator={<NavigateNextIcon fontSize="small" />}
               separator={<Calories> > </Calories>}
@@ -62,7 +193,36 @@ export const ClassBooking = () => {
             >
               {breadcrumbs}
             </Breadcrumbs>
-          </BCrumbs>
+          </BCrumbs> */}
+
+          <DatesWrapper>
+            <DatesDiv>
+              <DayNameDiv>F</DayNameDiv>
+              <DayNumDiv>01</DayNumDiv>
+            </DatesDiv>
+            <DatesDiv>
+              <DayNameDiv>S</DayNameDiv>
+              <DayNumDiv>02</DayNumDiv>
+            </DatesDiv>
+            <DatesDiv>
+              <DayNameDiv>S</DayNameDiv>
+              <DayNumDiv>03</DayNumDiv>
+            </DatesDiv>
+            <DatesDiv>
+              <DayNameDiv>M</DayNameDiv>
+              <DayNumDiv>04</DayNumDiv>
+            </DatesDiv>
+
+            <FilterDiv>
+              <img
+                alt="filter"
+                src="https://static.cure.fit/assets/images/filter_icon.svg"
+              />
+              <span style={{ marginLeft: "10px", color: "#7a7a7a" }}>
+                Filter
+              </span>
+            </FilterDiv>
+          </DatesWrapper>
 
           <h3 style={{ textAlign: "left" }}>Safety Guidelines</h3>
           <SmallBanner>

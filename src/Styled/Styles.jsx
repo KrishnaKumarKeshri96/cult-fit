@@ -257,3 +257,63 @@ export const GreenBtn = styled.button`
     cursor: pointer;
   }
 `;
+
+export const DatesDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 15%;
+  // border: grey 1px solid;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const DatesWrapper = styled.div`
+  @media (max-width: 768px) {
+    width: 400px;
+  }
+  display: flex;
+  flex-direction: row;
+  width: 586px;
+  height: 124px;
+  // border: grey 1px solid;
+`;
+
+export const DayNameDiv = styled.div`
+  color: #7a7a7a;
+`;
+
+export const DayNumDiv = styled.div`
+  @media (max-width: 768px) {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  font-weight: bold;
+  margin-left: 33%;
+  margin-right: 33%;
+  border-radius: 15px;
+  padding: 5px;
+  color: #7a7a7a;
+
+  &:hover {
+    background: #ff3278;
+    color: white;
+  }
+`;
+
+export const DownArrow = styled.div`
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const FilterDiv = styled.div`
+  padding-top: 9%;
+  margin-left: 5%;
+  &:hover {
+    cursor: pointer;
+  }
+`;

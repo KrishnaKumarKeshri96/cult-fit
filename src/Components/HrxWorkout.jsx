@@ -26,10 +26,12 @@ import cross from "../Hrx/cross.png";
 import { Link, useHistory } from "react-router-dom";
 
 import { Breadcrumbs } from "@mui/material";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AppContext } from "../Contexts/AppContext";
 
 export const HrxWorkout = () => {
   //   const history = useHistory();
+  // const { chooseCenter, setChooseCenter } = useContext(AppContext);
   const [chooseCenter, setChooseCenter] = useState(false);
   const handleSelectedCenter = (store) => {
     // history.push("/workout/classbooking");

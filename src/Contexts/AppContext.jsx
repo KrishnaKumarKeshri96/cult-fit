@@ -1,8 +1,13 @@
-const { createContext } = require("react");
+const { createContext, useState } = require("react");
 
 export const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
-    
-  return <AppContext.Provider>{children}</AppContext.Provider>;
+  const [chooseCenter, setChooseCenter] = useState(false);
+
+  return (
+    <AppContext.Provider value={{ chooseCenter, setChooseCenter }}>
+      {children}
+    </AppContext.Provider>
+  );
 };

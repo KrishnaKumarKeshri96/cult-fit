@@ -1,5 +1,5 @@
 import "./App.css";
-import { GoogleLogin } from "react-google-login";
+// import { GoogleLogin } from "react-google-login";
 import { useEffect, useState } from "react";
 import { HrxWorkout } from "./Components/HrxWorkout";
 import { Link, Route, Switch } from "react-router-dom";
@@ -81,6 +81,7 @@ function App() {
       </Switch> */}
 
       <ClassBooking></ClassBooking>
+      {/* <HrxWorkout></HrxWorkout> */}
     </div>
   );
 }
