@@ -19,7 +19,16 @@ const Cult = () => {
         <div className={styles.tbPadding}>
           <div className={styles.title}>Two Free Trials</div>
           <p className={styles.subtitle}>Experience Cult classes for free</p>
-          <div className={styles.tickets}></div>
+          <div className={styles.tickets}>
+            <div>
+              <h3>01</h3>
+              <button>Try for free</button>
+            </div>
+            <div>
+              <h3>02</h3>
+              <button>Try for free</button>
+            </div>
+          </div>
         </div>
       </div>
 
