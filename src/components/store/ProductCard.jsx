@@ -33,8 +33,6 @@ const PriceContainer = styled.div`
   & .finalPrice {
     color: #242424;
     font-weight: bold;
-    font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
-      sans-serif;
   }
 
   & .listingPrice {
@@ -46,8 +44,6 @@ const PriceContainer = styled.div`
   & .discount {
     color: #ff3278;
     font-size: 12px;
-    font-family: BrandonTextWeb-Medium, Helvetica Neue, Helvetica, Roboto, Arial,
-      sans-serif;
   }
 `;
 
@@ -59,8 +55,6 @@ const ProductDiv = styled.div`
     font-size: 14px;
     line-height: 16px;
     margin-top: 10px;
-    font-family: BrandonTextWeb-Medium, Helvetica Neue, Helvetica, Roboto, Arial,
-      sans-serif;
     text-transform: uppercase;
   }
 

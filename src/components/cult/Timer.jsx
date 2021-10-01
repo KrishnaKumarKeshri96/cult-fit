@@ -81,7 +81,7 @@ const TimerContainer = styled.div`
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 60px;
+    font-size: 4vw;
     text-align: center;
     letter-spacing: 0.01em;
     color: #fb2727;
@@ -91,12 +91,10 @@ const TimerContainer = styled.div`
   }
 
   & .unit {
-    font-family: BrandonTextWeb-Medium, Helvetica Neue, Helvetica, Roboto, Arial,
-      sans-serif;
     font-size: 12px;
     color: #989898;
     text-align: center;
-    margin-top: -15px;
+    margin-top: -1vw;
     padding-bottom: 15px;
   }
 
@@ -113,7 +111,7 @@ const Seperator = styled.span`
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 60px;
+  font-size: 4vw;
   text-align: center;
   letter-spacing: 0.01em;
   color: #fb2727;
