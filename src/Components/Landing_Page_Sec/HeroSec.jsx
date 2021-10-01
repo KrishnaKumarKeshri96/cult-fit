@@ -3,9 +3,11 @@ import styled from "styled-components";
 // import { useEffect, useState } from "react";
 // import { CSSTransition } from "react-transition-group";
 
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 export const HeroSec = () => {
+  const history = useHistory();
+
   const SpanD = styled.span`
     display: inline-block;
 
@@ -78,7 +80,14 @@ export const HeroSec = () => {
                   to frequent sanitisation, cult is playing it safe so you don't
                   have to.
                 </p>
-                <button class="button_style1">Explore</button>
+                <button
+                  onClick={() => {
+                    history.push("/cult");
+                  }}
+                  class="button_style1"
+                >
+                  Explore
+                </button>
               </div>
             </div>
             <div class="card card2">

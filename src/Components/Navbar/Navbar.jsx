@@ -1,6 +1,6 @@
 import styles from "./navbar.module.css";
 
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import logo from "../../images/logo.svg";
 import cultIcon from "../../images/cult-icon.svg";
@@ -13,9 +13,16 @@ import userImg from "../../images/user-image.svg";
 import cart from "../../images/cart-image.svg";
 
 export const Navbar = () => {
+  const history = useHistory();
   return (
     <header className={styles.nav_section}>
-      <img src={logo} alt="Logo" />
+      <img
+        onClick={() => {
+          history.push("/");
+        }}
+        src={logo}
+        alt="Logo"
+      />
       <nav>
         <Link>
           <img src={cultIcon} alt="" />
@@ -38,7 +45,13 @@ export const Navbar = () => {
           Care
         </Link>
         <Link>
-          <img src={storeIcon} alt="" />
+          <img
+            onClick={() => {
+              history.push("/cart");
+            }}
+            src={storeIcon}
+            alt=""
+          />
           Store
         </Link>
       </nav>
