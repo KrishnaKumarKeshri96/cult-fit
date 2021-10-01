@@ -1,13 +1,152 @@
-[{
-    "type": "MEN"
-  },{
-    "type": "WOMEN"
-  },{
-    "type": "EQUIPMENT"
-  },{
-    "type": "ACCESSORIES"
-  },
-  {
-      "type":"VITAMINS"
-  }
+[
+    {
+        "_id": "6156d1d558a1e07118d0acdd",
+        "category": "T-SHIRTS",
+        "createdAt": "2021-10-01T09:16:05.865Z",
+        "updatedAt": "2021-10-01T09:16:05.865Z"
+    },
+    {
+        "_id": "6156d1d558a1e07118d0acde",
+        "category": "SWEATSHIRTS",
+        "createdAt": "2021-10-01T09:16:05.866Z",
+        "updatedAt": "2021-10-01T09:16:05.866Z"
+    },
+    {
+        "_id": "6156d1d558a1e07118d0acdf",
+        "category": "JOGGERS",
+        "createdAt": "2021-10-01T09:16:05.866Z",
+        "updatedAt": "2021-10-01T09:16:05.866Z"
+    },
+    {
+        "_id": "6156d1d558a1e07118d0ace0",
+        "category": "SPORTS BRA",
+        "createdAt": "2021-10-01T09:16:05.866Z",
+        "updatedAt": "2021-10-01T09:16:05.866Z"
+    },
+    {
+        "_id": "6156d1d558a1e07118d0ace1",
+        "category": "EQUIPMENT",
+        "createdAt": "2021-10-01T09:16:05.866Z",
+        "updatedAt": "2021-10-01T09:16:05.866Z"
+    },
+    {
+        "_id": "6156d1d558a1e07118d0ace2",
+        "category": "LEGGINGS",
+        "createdAt": "2021-10-01T09:16:05.866Z",
+        "updatedAt": "2021-10-01T09:16:05.866Z"
+    },
+    {
+        "_id": "6156d1d558a1e07118d0ace3",
+        "category": "YOGA",
+        "createdAt": "2021-10-01T09:16:05.866Z",
+        "updatedAt": "2021-10-01T09:16:05.866Z"
+    },
+    {
+        "_id": "6156d1d558a1e07118d0ace4",
+        "category": "ACCESSORIES",
+        "createdAt": "2021-10-01T09:16:05.866Z",
+        "updatedAt": "2021-10-01T09:16:05.866Z"
+    },
+    {
+        "_id": "6156d1d558a1e07118d0ace5",
+        "category": "SHORTS",
+        "createdAt": "2021-10-01T09:16:05.866Z",
+        "updatedAt": "2021-10-01T09:16:05.866Z"
+    },
+    {
+        "_id": "6156d1d558a1e07118d0ace6",
+        "category": "MASK",
+        "createdAt": "2021-10-01T09:16:05.866Z",
+        "updatedAt": "2021-10-01T09:16:05.866Z"
+    }
 ]
+
+[
+    {
+        "_id": "6156ce5c978a1a6b68ba6ac4",
+        "type": "MEN",
+        "createdAt": "2021-10-01T09:01:16.084Z",
+        "updatedAt": "2021-10-01T09:01:16.084Z"
+    },
+    {
+        "_id": "6156ce5c978a1a6b68ba6ac5",
+        "type": "WOMEN",
+        "createdAt": "2021-10-01T09:01:16.084Z",
+        "updatedAt": "2021-10-01T09:01:16.084Z"
+    },
+    {
+        "_id": "6156ce5c978a1a6b68ba6ac6",
+        "type": "EQUIPMENT",
+        "createdAt": "2021-10-01T09:01:16.084Z",
+        "updatedAt": "2021-10-01T09:01:16.084Z"
+    },
+    {
+        "_id": "6156ce5c978a1a6b68ba6ac7",
+        "type": "ACCESSORIES",
+        "createdAt": "2021-10-01T09:01:16.084Z",
+        "updatedAt": "2021-10-01T09:01:16.084Z"
+    },
+    {
+        "_id": "6156ce5c978a1a6b68ba6ac8",
+        "type": "VITAMINS",
+        "createdAt": "2021-10-01T09:01:16.084Z",
+        "updatedAt": "2021-10-01T09:01:16.084Z"
+    }
+]
+
+["s","m","xxl"]
+["s","m","xl"]
+["s","m","l"]
+["s","m","l","xl","xxl"]
+["m","l","xl"]
+
+
+[
+ {
+    "name": "Flexoft Men's Signature Twist Hooded Sweatshirt",
+    "desc": "This winter, keep things hot with the Flexoft Men's Sweatshirt collection! Featuring a fun twist to the cultsport signature logo, this hooded sweatshirt brings the best of design elements, fabric and technology together. Its 'clever pockets' allow you to keep your gadgets conveniently safe while out for a jog and its comfort-maximising flexoft cotton keeps you cosy when indoors. The thumb hole detail adds to the utility while the witty binary design and neon highlights make it even more fashionably desirable!",
+    "size": ["s","m","l"],
+   "price": 2299,
+    "actualPrice": 1149,
+    "disc":50,
+    "img": ["https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/LehrSEzCufWF8L38jFg8nmDG",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/GQ49AuZcam9DQx6cVkCQf7jr",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/5Sfvi8jSGAHrXnB84peFZ9YR",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/aWjcVVmMGnveFaUfUkZ48KNf",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/PnftxBBPDik6Q44DNTc5F2XP",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/QwuHkZDZDpvtnY6RkVgUDGpX",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/a43L7qjrTdReddgmZLfz6dBx",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/vdfVfmjKjbUQQSBRRpgehQYC"],
+   "type":"MEN",
+    "category": "SWEATSHIRTS"
+  }
+
+  ,{
+    "name": "AbsoluteFit Verbatim Black Workout Leggings",
+    "desc": "The AbsoluteFit Leggings is made from premium compression fabric that improves circulation and offers structural support. It lets you workout without adjusting. So go for that extra push, for the extended lunge or the high jumping jack.",
+    "size": ["s","l"],
+   "price": 1899,
+    "actualPrice": 1139,
+    "disc":40,
+    "img": ["https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/nfoNipG9dQaxwktcmVtdedLs"
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/BfFAZTuan24hzJpyQGg6ZHSX",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/x1Xzo4joRAe682YtVPq4cAaQ",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/1Mjzrsr6xp8ekhJSwvPWJYnp",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/iiJQbDxZ3uRAiZ6znhNum1yB",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/S7zHCVkJzMGbHyvbQ3ysuqR9",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/3A2Cydo489sKoKpLu2TWcVXV",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/AZbW5ptFikcmtFtjtU1uBgGg",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/STyNkcjjod8TaydkpdKnE2aT"],
+   "type":"WOMEN",
+    "category": "LEGGINGS",
+  }
+    
+    
+]
+
+
+
+
+
+
+

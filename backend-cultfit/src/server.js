@@ -13,6 +13,8 @@ const sectionController = require("./controllers/section.controller");
 
 const categoryController = require("./controllers/categories.controller");
 
+const productController = require("./controllers/product.controller");
+
 app.use("/users", userController);
 
 app.use("/brand", brandController);
@@ -20,6 +22,8 @@ app.use("/brand", brandController);
 app.use("/section", sectionController);
 
 app.use("/category", categoryController);
+
+app.use("/product", productController);
 
 app.listen("8080", async () => {
   try {
