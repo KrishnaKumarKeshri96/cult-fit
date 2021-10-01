@@ -1,0 +1,27 @@
+.banner img {
+  width: 100%;
+}
+.maxWidthContainer {
+  width: 100%;
+  padding: 5px 5%;
+  /* min-height: fit-content; */
+}
+.gridContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.gridContainer img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.maxWidthContainer .bannerTitle {
+  font-size: 24px;
+}
+.carousel .slick-dots {
+  padding-left: 5%;
+  margin-left: -7px;
+  text-align: left;
+}
+.productListHeader{
+  /*  */
+}

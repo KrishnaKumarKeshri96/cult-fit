@@ -1,0 +1,5 @@
+.leftContainer,
+.rightContainer {
+  width: 50%;
+  display: inline-block;
+}
