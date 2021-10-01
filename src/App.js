@@ -19,6 +19,9 @@ function App() {
         <Route path="/landing/:id">
           <CartPage></CartPage>
         </Route>
+        <Route path="/productpage/:id">
+          <ProductPage></ProductPage>
+        </Route>
         <Route>Page Not Found</Route>
       </Switch>
     </div>
