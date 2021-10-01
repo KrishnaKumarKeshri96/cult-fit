@@ -146,7 +146,7 @@ li {
 }
 .hero_section h2 {
   font-size: 50px;
-  max-width: 260px;
+  max-width: 270px;
   color: #333;
 }
 
@@ -344,6 +344,7 @@ li {
   background: linear-gradient(to right, #6f69aa, #378ac5);
   color: white;
   margin-top: 70px;
+  overflow: hidden;
 }
 
 .get_the_app_section .container {
@@ -406,20 +407,21 @@ li {
 /* BE BETTER SECTION */
 
 .be_better_section .container {
-  height: 305px;
+  min-height: 305px;
   display: flex;
   align-items: center;
   max-width: 1236px;
 }
 
 .be_better_section h2 {
-  width: 70%;
+  width: 700px;
   font-size: 100px;
   letter-spacing: -0.6px;
   color: #6e6e6e;
   text-transform: uppercase;
   line-height: 100px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .be_better_section h2 span {
@@ -656,17 +658,103 @@ footer .social_icons a:hover {
 }
 
 /* Responsive */
+/* For 1300px and lower */
 @media only screen and (max-width: 1300px) {
+  /* Hero Section */
+  .hero_section {
+    max-width: 925px;
+  }
+
+  .hero_section .left_section {
+    width: 42%;
+  }
+
+  /* BANNER SECTION */
+  .banner_section {
+    max-width: 925px;
+  }
+
+  /* HOME CARDS SECTION */
+  .home_card_section {
+    margin-top: 60px;
+    max-width: 925px;
+  }
+
+  /* GET THE APP SECTION */
+  .get_the_app_section .container {
+    max-width: 925px;
+  }
+
+  /* BE BETTER SECTION */
+  .be_better_section .container {
+    max-width: 925px;
+  }
+
+  /* Footer section */
+  footer .container {
+    max-width: 990px;
+  }
+
+  /* Products Page */
   .products {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   .products_section {
-    max-width: 900px;
+    max-width: 896px;
   }
 }
 
+/* For 1000px and lower */
 @media only screen and (max-width: 1000px) {
+  /* NAVBAR */
+  /* login button */
+  .nav_section .right_section > div {
+    display: none;
+  }
+
+  /* Hero Section */
+  .hero_section {
+    max-width: 700px;
+  }
+
+  .hero_section .left_section {
+    width: 60%;
+  }
+
+  /* BANNER SECTION */
+  .banner_section {
+    max-width: 700px;
+  }
+
+  /* HOME CARDS SECTION */
+  .home_card_section {
+    margin-top: 60px;
+    max-width: 700px;
+  }
+
+  /* GET THE APP SECTION */
+  .get_the_app_section .container {
+    max-width: 700px;
+    padding: 0px 60px;
+  }
+
+  /* BE BETTER SECTION */
+  .be_better_section .container {
+    margin-top: 40px;
+    max-width: 700px;
+  }
+
+  /* Footer section */
+  footer .container {
+    max-width: 770px;
+  }
+
+  .related_searches_section .search_list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Products page */
   .products {
     grid-template-columns: 1fr 1fr;
   }
@@ -675,7 +763,195 @@ footer .social_icons a:hover {
   }
 }
 
+/* For 768px and lower */
 @media only screen and (max-width: 768px) {
+  /* NAVBAR */
+  .nav_section {
+    display: none;
+  }
+
+  /* HERO SECTION */
+  .hero_section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    max-width: 768px;
+  }
+
+  .hero_section .left_section {
+    width: 90%;
+  }
+
+  .hero_section h2 {
+    font-size: 30px;
+    max-width: 160px;
+    line-height: 30px;
+  }
+
+  .hero_section p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  /* BANNER SECTION */
+  .banner_section {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  /* HOME CARDS SECTION */
+
+  .home_card_section {
+    margin-top: 85px;
+    max-width: 100%;
+  }
+
+  .home_card_section .top_section .subheading {
+    font-size: 18px;
+  }
+
+  .home_card_section .top_section > p {
+    font-size: 13px;
+  }
+
+  .home_card_section .top_section .sub_heading_section span {
+    display: none;
+  }
+
+  /* Slider section */
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3.3fr 1fr 1fr;
+    gap: 6px;
+    width: 100%;
+    height: 480px;
+    transition: all 0.5s ease;
+    margin-top: 30px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .cards > div .content {
+    width: 60%;
+    margin-top: 10px;
+    gap: 10px;
+    transform: translateY(200px);
+  }
+
+  .cards > div .content p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .button_style1 {
+    width: 80%;
+  }
+
+  .cards img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80% 40%;
+  }
+
+  /* GET THE APP SECTION */
+  .get_the_app_section .container {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  /* BE BETTER SECTION */
+  .be_better_section .container {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  /* BE BETTER SECTION */
+  .be_better_section h2 {
+    font-size: 15vw;
+    line-height: 15vw;
+  }
+  /* BE BETTER SECTION */
+  .be_better_section h2 span {
+    font-size: 15vw;
+  }
+
+  /* Footer section */
+  footer .top_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: left;
+    padding: 50px 0px;
+    margin: 0px 15px;
+    color: white;
+  }
+
+  footer .top_section .about_links a,
+  footer .top_section .business_links a {
+    font-weight: 200;
+    font-family: "Brandon Text Regular";
+  }
+
+  footer .top_section .about_links ul,
+  footer .top_section .business_links ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 1;
+    gap: 12px;
+  }
+
+  footer .top_section .business_links ul li {
+    white-space: nowrap;
+  }
+
+  footer .top_section .download_app {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  /* Related searches */
+  .related_searches_section {
+    padding: 22px;
+    background-color: #111213;
+    padding-bottom: 50px;
+  }
+
+  /* Footer bottom */
+  footer .bottom {
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+  }
+
+  footer .bottom .links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  footer .social_icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  /* Products page */
   .products {
     grid-template-columns: 1fr 1fr;
   }
