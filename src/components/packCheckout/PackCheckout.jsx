@@ -60,7 +60,7 @@ const PackCheckout = () => {
                 <p>₹ 5480.00</p>
               </p>
               <br />
-              <p className="grey flex">
+              <p className="regular flex">
                 <p>Total Payable</p>
                 <p>₹ 6490.00</p>
               </p>

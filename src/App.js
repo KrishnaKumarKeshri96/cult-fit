@@ -1,7 +1,7 @@
 import "./App.css";
-// import Store from "./components/store/Store";
-// import Cult from "./components/cult/Cult";
-// import CultPacks from "./components/cultPacks/CultPacks";
+import Store from "./components/store/Store";
+import Cult from "./components/cult/Cult";
+import CultPacks from "./components/cultPacks/CultPacks";
 import PackCheckout from "./components/packCheckout//PackCheckout";
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
   //test slack notificatin
   return (
     <div className="App">
-      {/* <Store /> */}
-      {/* <Cult /> */}
-      {/* <CultPacks /> */}
+      <Store />
+      <Cult />
+      <CultPacks />
       <PackCheckout />
     </div>
   );
