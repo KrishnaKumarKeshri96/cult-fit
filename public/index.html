@@ -41,4 +41,133 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+
+  <script>
+    // hero word change
+    let titleWord = document.querySelector(".title_anim");
+    let words = ["love", "ease", "fun"];
+    let i = 1;
+    setInterval(function () {
+      if (i === words.length) {
+        i = 0;
+      }
+      titleWord.innerHTML = words[i];
+      i++;
+    }, 3501);
+    // Slider animation
+    let width = document.body.clientWidth;
+    if (width > 768) {
+      // select all the elements
+      let cards = document.querySelectorAll(".cards");
+      let card1 = document.querySelectorAll(".card1");
+      let card2 = document.querySelectorAll(".card2");
+      let card3 = document.querySelectorAll(".card3");
+      let card1Content = document.querySelectorAll(".card1 .content");
+      let card2Content = document.querySelectorAll(".card2 .content");
+      let card3Content = document.querySelectorAll(".card3 .content");
+      let card1img = document.querySelectorAll(".card1img");
+      let card2img = document.querySelectorAll(".card2img");
+      let card3img = document.querySelectorAll(".card3img");
+      // for each card 1 apply to the relative card
+      for (let i = 0; i < card1.length; i++) {
+        card1[i].addEventListener("mouseover", () => {
+          cards[i].style.gridTemplateColumns = "3fr 1fr 1fr";
+          card1Content[i].style.transform = "translateX(0px)";
+          card1Content[i].style.opacity = "1";
+          card2Content[i].style.opacity = "0";
+          card3Content[i].style.opacity = "0";
+        });
+      }
+      // for each card 2 apply to the relative card
+      for (let i = 0; i < card1.length; i++) {
+        card2[i].addEventListener("mouseover", () => {
+          cards[i].style.gridTemplateColumns = "1fr 3fr 1fr";
+          card2Content[i].style.transform = "translateX(0px)";
+          card2Content[i].style.opacity = "1";
+          card1Content[i].style.opacity = "0";
+          card3Content[i].style.opacity = "0";
+        });
+      }
+      // for each card 3 apply to the relative card
+      for (let i = 0; i < card1.length; i++) {
+        card3[i].addEventListener("mouseover", () => {
+          cards[i].style.gridTemplateColumns = "1fr 1fr 3fr";
+          card3Content[i].style.transform = "translateX(0px)";
+          card3Content[i].style.opacity = "1";
+          card1Content[i].style.opacity = "0";
+          card2Content[i].style.opacity = "0";
+        });
+      }
+    }
+    if (width <= 768) {
+      // select all the elements
+      let cards = document.querySelectorAll(".cards");
+      let card1 = document.querySelectorAll(".card1");
+      let card2 = document.querySelectorAll(".card2");
+      let card3 = document.querySelectorAll(".card3");
+      let card1Content = document.querySelectorAll(".card1 .content");
+      let card2Content = document.querySelectorAll(".card2 .content");
+      let card3Content = document.querySelectorAll(".card3 .content");
+      let card1img = document.querySelectorAll(".card1img");
+      let card2img = document.querySelectorAll(".card2img");
+      let card3img = document.querySelectorAll(".card3img");
+      // for each card 1 apply to the relative card
+      for (let i = 0; i < card1.length; i++) {
+        card1[i].addEventListener("click", () => {
+          cards[i].style.gridTemplateRows = "3.3fr 1fr 1fr";
+          card1Content[i].style.transform = "translateY(0px)";
+          card1Content[i].style.opacity = "1";
+          card2Content[i].style.opacity = "0";
+          card3Content[i].style.opacity = "0";
+        });
+      }
+      // for each card 2 apply to the relative card
+      for (let i = 0; i < card1.length; i++) {
+        card2[i].addEventListener("click", () => {
+          cards[i].style.gridTemplateRows = "1fr 3.3fr 1fr";
+          card2Content[i].style.transform = "translateY(0px)";
+          card2Content[i].style.opacity = "1";
+          card1Content[i].style.opacity = "0";
+          card3Content[i].style.opacity = "0";
+        });
+      }
+      // for each card 3 apply to the relative card
+      for (let i = 0; i < card1.length; i++) {
+        card3[i].addEventListener("click", () => {
+          cards[i].style.gridTemplateRows = "1fr 1fr 3.3fr";
+          card3Content[i].style.transform = "translateY(0px)";
+          card3Content[i].style.opacity = "1";
+          card1Content[i].style.opacity = "0";
+          card2Content[i].style.opacity = "0";
+        });
+      }
+    }
+    // show on scroll
+    let scroll =
+      window.requestAnimationFrame ||
+      function (callback) {
+        window.setTimeout(callback, 1000 / 60);
+      };
+    let elementToShow = document.querySelectorAll(".show_on_scroll");
+    function loop() {
+      elementToShow.forEach((element) => {
+        if (isElementInViewport(element)) {
+          element.classList.add("is_visible");
+        } else {
+          element.classList.remove("is_visible");
+        }
+      });
+      scroll(loop);
+    }
+    loop();
+    // Helper function from: http://stackoverflow.com/a/7557433/274826
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top <= 0 ||
+        (rect.bottom >= window.innerHeight && rect.top <= window.innerHeight) ||
+        (rect.top >= 0 && rect.bottom <= window.innerHeight + 800)
+      );
+    }
+  </script>
 </html>

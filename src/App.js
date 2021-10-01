@@ -1,18 +1,26 @@
 import "./App.css";
-import { CartPage } from "./Components/Cart/CartPage";
-import { Login } from "./Components/Login/Login";
-import { Navbar } from "./Components/Navbar/Navbar";
-import { HeroSec } from "./Components/Landing_Page_Sec/HeroSec";
-import { Route } from "react-router-dom";
-import { Footer } from "./Components/Footer/Footer";
-import { StaicLanding } from "./Components/Landing_Page_Sec/StaticData";
+import { Switch, Route } from "react-router-dom";
 
 import { LandingPage } from "./Components/Landing_Page_Sec/LandingPage/LandingPage";
+import Store from "./Components/store/Store";
+import { ProductPage } from "./Components/store/StoreProductPage";
+import { CartPage } from "./Components/Cart/CartPage";
 
 function App() {
   return (
     <div>
-      <LandingPage />
+      <Switch>
+        <Route path="/" exact>
+          <LandingPage />
+        </Route>
+        <Route path="/cultstore">
+          <Store />
+        </Route>
+        <Route path="/landing/:id">
+          <CartPage></CartPage>
+        </Route>
+        <Route>Page Not Found</Route>
+      </Switch>
     </div>
   );
 }

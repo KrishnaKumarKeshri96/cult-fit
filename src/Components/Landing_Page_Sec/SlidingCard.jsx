@@ -9,11 +9,11 @@ export const SliderCardHomePAge = ({
   description,
 }) => {
   return (
-    <div class="home_card_section container">
-      <div class="top_section">
+    <div className="home_card_section container">
+      <div className="top_section">
         <img src={title} alt="Cult" />
-        <div class="sub_heading_section">
-          <h3 class="subheading">{subTitle}</h3>
+        <div className="sub_heading_section">
+          <h3 className="subheading">{subTitle}</h3>
           <Link to="/">
             Explore
             <img src={arrow} alt="Arrow" />
@@ -22,30 +22,30 @@ export const SliderCardHomePAge = ({
         <p>{description}</p>
       </div>
 
-      <div class="slider_section">
-        <div class="cards">
-          <div class="card card1">
-            <img class="card1img" src={products.img[0]} alt="" />
+      <div className="slider_section">
+        <div className="cards">
+          <div className="card card1">
+            <img className="card1img" src={products.img[0]} alt="" />
             <h3>{products.title[0]}</h3>
-            <div class="content">
+            <div className="content">
               <p>{products.description[0]}</p>
-              <button class="button_style1">{products.btn[0]}</button>
+              <button className="button_style1">{products.btn[0]}</button>
             </div>
           </div>
-          <div class="card card2">
-            <img class="card2img" src={products.img[1]} alt="" />
+          <div className="card card2">
+            <img className="card2img" src={products.img[1]} alt="" />
             <h3>{products.title[1]}</h3>
-            <div class="content">
+            <div className="content">
               <p>{products.description[1]}</p>
-              <button class="button_style1">{products.btn[1]}</button>
+              <button className="button_style1">{products.btn[1]}</button>
             </div>
           </div>
-          <div class="card card3">
-            <img class="card3img" src={products.img[2]} alt="" />
+          <div className="card card3">
+            <img className="card3img" src={products.img[2]} alt="" />
             <h3>{products.title[2]}</h3>
-            <div class="content">
+            <div className="content">
               <p>{products.description[2]}</p>
-              <button class="button_style1">{products.btn[2]}</button>
+              <button className="button_style1">{products.btn[2]}</button>
             </div>
           </div>
         </div>

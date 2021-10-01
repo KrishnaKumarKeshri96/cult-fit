@@ -103,22 +103,18 @@
 
 [
  {
-    "name": "Flexoft Men's Signature Twist Hooded Sweatshirt",
-    "desc": "This winter, keep things hot with the Flexoft Men's Sweatshirt collection! Featuring a fun twist to the cultsport signature logo, this hooded sweatshirt brings the best of design elements, fabric and technology together. Its 'clever pockets' allow you to keep your gadgets conveniently safe while out for a jog and its comfort-maximising flexoft cotton keeps you cosy when indoors. The thumb hole detail adds to the utility while the witty binary design and neon highlights make it even more fashionably desirable!",
-    "size": ["s","m","l"],
-   "price": 2299,
-    "actualPrice": 1149,
-    "disc":50,
-    "img": ["https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/LehrSEzCufWF8L38jFg8nmDG",
-"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/GQ49AuZcam9DQx6cVkCQf7jr",
-"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/5Sfvi8jSGAHrXnB84peFZ9YR",
-"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/aWjcVVmMGnveFaUfUkZ48KNf",
-"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/PnftxBBPDik6Q44DNTc5F2XP",
-"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/QwuHkZDZDpvtnY6RkVgUDGpX",
-"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/a43L7qjrTdReddgmZLfz6dBx",
-"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/vdfVfmjKjbUQQSBRRpgehQYC"],
-   "type":"MEN",
-    "category": "SWEATSHIRTS"
+    "name": "Yoga Strap",
+    "desc": "Perfect your Yoga practice with the aid of this Yoga strap. A useful accessory that helps improve your stability, flexibility, strength and overall practice, a Yoga strap can be used by Yogis of all levels to take their practice to the next level.",
+    "size": ["All"],
+   "price": 599,
+    "actualPrice":389 ,
+    "disc":35,
+    "img": ["https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/TtKkztyhA84pRRQb6SstMJSP",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/8TCzaQey6eAmjMfKfUG8Vpc9",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/AsQjx7z22LJ5gAnyo6JcfZSK",
+"https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/8b7Yb2NJxqjw9EAieDnwV8PK"],
+   "type":"YOGA",
+    "category": "YOGA"
   }
 
   ,{

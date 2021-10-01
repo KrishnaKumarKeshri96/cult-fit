@@ -37,7 +37,7 @@ export const Navbar = () => {
           <img src={carefit} alt="" />
           Care
         </Link>
-        <Link>
+        <Link to="/cultstore">
           <img src={storeIcon} alt="" />
           Store
         </Link>
