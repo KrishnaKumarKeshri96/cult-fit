@@ -52,6 +52,7 @@ export const ClassBooking = () => {
 
   const handleSelectedCenter = (store) => {
     // history.push("/workout/classbooking");
+    setChooseCenter(!chooseCenter);
   };
 
   const locations = [
@@ -124,7 +125,13 @@ export const ClassBooking = () => {
               <CentersDiv style={{ overflow: "scroll" }}>
                 {locations.map((location) => (
                   <Loc>
-                    <h3 style={{ textAlign: "left" }}>
+                    <h3
+                      style={{
+                        textAlign: "left",
+                        marginBottom: "20px",
+                        marginTop: "10px",
+                      }}
+                    >
                       {location.store_name}{" "}
                       <Pink
                         onClick={() =>
@@ -135,7 +142,9 @@ export const ClassBooking = () => {
                       </Pink>
                     </h3>
 
-                    <p style={{ textAlign: "left" }}>{location.address}</p>
+                    <p style={{ textAlign: "left", marginBottom: "10px" }}>
+                      {location.address}
+                    </p>
                   </Loc>
                 ))}
               </CentersDiv>

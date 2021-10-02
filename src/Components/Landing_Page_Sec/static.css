@@ -1,4 +1,4 @@
-/*.get_the_app_section {
+.get_the_app_section {
   background: linear-gradient(to right, #6f69aa, #378ac5);
   color: white;
   margin-top: 70px;
@@ -42,7 +42,7 @@
 }
 
 /* CULT BUSINESS SECTION */
-/*.cult_business_section {
+.cult_business_section {
   height: 36.2vw;
 }
 
@@ -52,7 +52,7 @@
 }
 
 /* CULT CAREER SECTION */
-/*.cult_career_section {
+.cult_career_section {
   height: 35.5vw;
 }
 
@@ -63,7 +63,7 @@
 
 /* BE BETTER SECTION */
 
-/*.be_better_section .container {
+.be_better_section .container {
   height: 305px;
   display: flex;
   align-items: center;
@@ -84,4 +84,3 @@
   color: #b2b2b2;
   font-size: 80px;
 }
-*/

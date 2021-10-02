@@ -1,8 +1,9 @@
 import styles from "./login.module.css";
 import { FaTimes, FaGoogle, FaFacebookF, FaEnvelope } from "react-icons/fa";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import styled from "styled-components";
-
+import { GoogleLogin } from "react-google-login";
+import { AppContext } from "../../Contextxts/AppContext";
 export const Login = () => {
   const [hide, setHide] = useState(false);
   const [contentChange, setContentChange] = useState(false);
@@ -23,6 +24,8 @@ export const Login = () => {
     z-index: 2000;
     background-color: rgba(128, 128, 128, 0.555);
   `;
+
+  // const { handleLogin } = useContext(AppContext);
 
   return (
     <>
@@ -75,6 +78,7 @@ export const Login = () => {
                 />
                 <h4 style={{ color: "white" }}>Sign in with Google</h4>
               </button>
+
               <button
                 className={`${styles["facebook"]} ${styles["login__options"]} `}
                 style={{ margin: "10px auto" }}
@@ -109,7 +113,7 @@ export const Login = () => {
           )}
         </div>
       </LoginDiv>
-      <button onClick={() => setHide(false)}>click Me</button>
+      <button onClick={() => setHide(true)}>click Me</button>
     </>
   );
 };

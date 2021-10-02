@@ -39,3 +39,46 @@ a {
 li {
   list-style-type: none;
 }
+
+/* Date Picker - Hardik */
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  border-radius: 50% !important;
+  background-color: none;
+  background: linear-gradient(180deg, #fc733c -19.23%, #ff0f67 123.08%);
+  /* color: #fff; */
+}
+.react-datepicker {
+  border: none !important;
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.react-datepicker__current-month {
+  display: none;
+}
+.react-datepicker__header__dropdown,
+.react-datepicker__header__dropdown--select {
+  display: flex;
+  justify-content: space-around;
+}
+.react-datepicker__month-select,
+.react-datepicker__year-select {
+  /* padding: 5px;   */
+  border: none;
+  outline: none;
+  background: #fff;
+  max-width: fit-content;
+  color: #404040;
+  font-weight: bold;
+  font-size: 20px;
+}
+.react-datepicker__navigation,
+.react-datepicker__navigation--next {
+  display: none !important;
+}
+
+.react-datepicker__header,
+.react-datepicker__month {
+  border: none !important;
+  background: #ffffff !important;
+}

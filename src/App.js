@@ -14,16 +14,18 @@ import SubscriptionCard from "./Components/cult/SubscriptionCard";
 import Timer from "./Components/cult/Timer";
 import WorkoutGrid from "./Components/cult/WorkoutGrid";
 import CultPacks from "./Components/cultPacks/CultPacks";
+import { LandingPage } from "./Components/Landing_Page_Sec/LandingPage/LandingPage";
+import { GoogleLogin } from "react-google-login";
+import { AppContext } from "./Contextxts/AppContext";
+import { useContext } from "react";
 
 function App() {
+  const { handleLogin } = useContext(AppContext);
   return (
     <div>
       <Switch>
         <Route exact path="/">
-          <Navbar />
-          <HeroSec />
-          <StaicLanding />
-          <Footer />
+          <LandingPage></LandingPage>
         </Route>
         <Route exact path="/hrx">
           <Navbar />
@@ -60,6 +62,34 @@ function App() {
         <Route exact path="/cart">
           <Navbar></Navbar>
           <CartPage></CartPage>
+          <Footer></Footer>
+        </Route>
+
+        <Route exact path="/login">
+          <Navbar></Navbar>
+          <Login></Login>
+          <Footer></Footer>
+        </Route>
+
+        <Route>
+          <Navbar></Navbar>
+          <div
+            style={{
+              marginTop: "200px",
+              marginBottom: "300px",
+              marginLeft: "5%",
+            }}
+          >
+            <GoogleLogin
+              // clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+              clientId="755998271801-nnrchkokeh4u5ekiffuuprgec1lmmjca.apps.googleusercontent.com"
+              buttonText="Log in with Google"
+              onSuccess={handleLogin}
+              onFailure={handleLogin}
+              cookiePolicy={"single_host_origin"}
+            />
+            <h1>Oops...! It seems to be 404</h1>
+          </div>
           <Footer></Footer>
         </Route>
       </Switch>
