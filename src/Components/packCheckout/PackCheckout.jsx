@@ -81,6 +81,7 @@ const Container = styled.div`
   width: 50%;
   display: inline-block;
   clear: "both";
+  margin-top: 64px;
 
   & .pack {
     width: 75%;
