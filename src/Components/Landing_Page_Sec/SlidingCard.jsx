@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import arrow from "../../images/back-arrow-pink.svg";
 import "./sliding.css";
 import { useState, useEffect } from "react";
@@ -35,6 +35,7 @@ export const SliderCardHomePAge = ({
 }) => {
   const { width } = useWindowDimensions();
 
+  const history = useHistory();
   const handleCard1 = (e) => {
     if (width > 768) {
       e.target.parentElement.parentElement.style.gridTemplateColumns =
@@ -135,7 +136,14 @@ export const SliderCardHomePAge = ({
             <h3>{products.title[0]}</h3>
             <div class="content">
               <p>{products.description[0]}</p>
-              <button className="button_style1">{products.btn[0]}</button>
+              <button
+                onClick={() => {
+                  history.push("/cult");
+                }}
+                className="button_style1"
+              >
+                {products.btn[0]}
+              </button>
             </div>
           </div>
 

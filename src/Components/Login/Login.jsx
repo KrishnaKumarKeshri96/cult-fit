@@ -16,7 +16,7 @@ export const Login = ({ hide, handleHide }) => {
     justify-content: center;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
 
     z-index: 2000;
     background-color: rgba(128, 128, 128, 0.555);
@@ -112,7 +112,7 @@ export const Login = ({ hide, handleHide }) => {
           )}
         </div>
       </LoginDiv>
-      <button>click Me</button>
+      <div style={{ height: "10px" }}></div>
     </>
   );
 };
