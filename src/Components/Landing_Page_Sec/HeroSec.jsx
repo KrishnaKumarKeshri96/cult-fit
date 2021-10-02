@@ -14,6 +14,42 @@ export const HeroSec = () => {
     color: #00abe9;
   `;
 
+  const handleCard1 = (e) => {
+    e.target.parentElement.parentElement.style.gridTemplateColumns =
+      "3fr 1fr 1fr";
+
+    const [card1, card2, card3] =
+      e.target.parentElement.parentElement.childNodes;
+    card1.lastChild.style.transform = "translateX(0px)";
+    card1.lastChild.style.opacity = "1";
+    card2.lastChild.style.opacity = "0";
+    card3.lastChild.style.opacity = "0";
+  };
+
+  const handleCard2 = (e) => {
+    e.target.parentElement.parentElement.style.gridTemplateColumns =
+      "1fr 3fr 1fr";
+
+    const [card1, card2, card3] =
+      e.target.parentElement.parentElement.childNodes;
+    card2.lastChild.style.transform = "translateX(0px)";
+    card2.lastChild.style.opacity = "1";
+    card1.lastChild.style.opacity = "0";
+    card3.lastChild.style.opacity = "0";
+  };
+
+  const handleCard3 = (e) => {
+    e.target.parentElement.parentElement.style.gridTemplateColumns =
+      "1fr 1fr 3fr";
+
+    const [card1, card2, card3] =
+      e.target.parentElement.parentElement.childNodes;
+    card3.lastChild.style.transform = "translateX(0px)";
+    card3.lastChild.style.opacity = "1";
+    card1.lastChild.style.opacity = "0";
+    card2.lastChild.style.opacity = "0";
+  };
+
   return (
     <>
       <div className="hero_section container">
@@ -68,6 +104,9 @@ export const HeroSec = () => {
           <div class="cards">
             <div class="card card1">
               <img
+                onMouseOver={(e) => {
+                  handleCard1(e);
+                }}
                 class="card1img"
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/6285c073-5e3d-4abf-9189-21403628a1f4.png"
                 alt=""
@@ -92,6 +131,9 @@ export const HeroSec = () => {
             </div>
             <div class="card card2">
               <img
+                onMouseOver={(e) => {
+                  handleCard2(e);
+                }}
                 class="card2img"
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/f66c717a-bcb9-4d64-b227-115d1010b610.jpeg"
                 alt=""
@@ -109,6 +151,9 @@ export const HeroSec = () => {
             </div>
             <div class="card card3">
               <img
+                onMouseOver={(e) => {
+                  handleCard3(e);
+                }}
                 class="card3img"
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/aedcb538-777e-4564-b422-30eb8dc220d2.png"
                 alt=""
@@ -147,6 +192,9 @@ export const HeroSec = () => {
           <div class="cards">
             <div class="card card1">
               <img
+                onMouseOver={(e) => {
+                  handleCard1(e);
+                }}
                 class="card1img"
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
                 alt=""
@@ -162,6 +210,9 @@ export const HeroSec = () => {
             </div>
             <div class="card card2">
               <img
+                onMouseOver={(e) => {
+                  handleCard2(e);
+                }}
                 class="card2img"
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
                 alt=""
@@ -177,6 +228,9 @@ export const HeroSec = () => {
             </div>
             <div class="card card3">
               <img
+                onMouseOver={(e) => {
+                  handleCard3(e);
+                }}
                 class="card3img"
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
                 alt=""
