@@ -2,6 +2,7 @@
   background: linear-gradient(to right, #6f69aa, #378ac5);
   color: white;
   margin-top: 70px;
+  overflow: hidden;
 }
 
 .get_the_app_section .container {
@@ -64,23 +65,77 @@
 /* BE BETTER SECTION */
 
 .be_better_section .container {
-  height: 305px;
+  min-height: 305px;
   display: flex;
   align-items: center;
   max-width: 1236px;
 }
 
 .be_better_section h2 {
-  width: 70%;
+  width: 700px;
   font-size: 100px;
   letter-spacing: -0.6px;
   color: #6e6e6e;
   text-transform: uppercase;
   line-height: 100px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .be_better_section h2 span {
   color: #b2b2b2;
   font-size: 80px;
+}
+
+/* Responsive */
+/* For 1300px and lower */
+@media only screen and (max-width: 1300px) {
+  /* GET THE APP SECTION */
+  .get_the_app_section .container {
+    max-width: 925px;
+  }
+
+  /* BE BETTER SECTION */
+  .be_better_section .container {
+    max-width: 925px;
+  }
+}
+
+/* For 1000px and lower */
+@media only screen and (max-width: 1000px) {
+  /* GET THE APP SECTION */
+  .get_the_app_section .container {
+    max-width: 700px;
+    padding: 0px 60px;
+  }
+
+  /* BE BETTER SECTION */
+  .be_better_section .container {
+    margin-top: 40px;
+    max-width: 700px;
+  }
+}
+
+/* For 768px and lower */
+@media only screen and (max-width: 768px) {
+  /* GET THE APP SECTION */
+  .get_the_app_section .container {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  /* BE BETTER SECTION */
+  .be_better_section .container {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  /* BE BETTER SECTION */
+  .be_better_section h2 {
+    font-size: 15vw;
+    line-height: 15vw;
+  }
+  /* BE BETTER SECTION */
+  .be_better_section h2 span {
+    font-size: 15vw;
+  }
 }

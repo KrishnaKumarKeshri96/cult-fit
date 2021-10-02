@@ -96,3 +96,20 @@
 .nav_section .right_section a img {
   margin-top: 2px;
 }
+
+/* For 1000px and lower */
+@media only screen and (max-width: 1000px) {
+  /* NAVBAR */
+  /* login button */
+  .nav_section .right_section > div {
+    display: none;
+  }
+}
+
+/* For 768px and lower */
+@media only screen and (max-width: 768px) {
+  /* NAVBAR */
+  .nav_section {
+    display: none;
+  }
+}
