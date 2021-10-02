@@ -7,7 +7,7 @@ import WorkoutGrid from "./WorkoutGrid";
 const Cult = () => {
   return (
     <>
-      <div className={styles.maxWidthContainer}>
+      <div className={`${styles.maxWidthContainer} ${styles.mt}`}>
         <img src="img/cult/cult1.png" alt="Ad" />
       </div>
       <div className={`${styles.fixWidthContainer} ${styles.tbPadding}`}>

@@ -837,7 +837,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .home_card_section .top_section > img {

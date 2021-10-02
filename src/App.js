@@ -1,9 +1,9 @@
 // import "./App.css";
 import { CartPage } from "./Components/Cart/CartPage";
-import { Login } from "./Components/Login/Login";
+// import { Login } from "./Components/Login/Login";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { HeroSec } from "./Components/Landing_Page_Sec/HeroSec";
-import { NavLink, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { Footer } from "./Components/Footer/Footer";
 import { StaicLanding } from "./Components/Landing_Page_Sec/StaticData";
 import { HrxWorkout } from "./Components/HrxWorkout";

@@ -1,18 +1,22 @@
-img {
+/* img {
   width: 100%;
-}
+} */
 .leftContainer {
   display: inline-block;
   width: 50%;
   position: sticky;
   padding: 10px 10% 20px;
   vertical-align: top;
-  top: 5vh;
+  top: 75px;
 }
 .rightContainer {
   display: inline-block;
   width: 50%;
-  padding: 40px 10% 20px 0;
+  padding: 85px 10% 20px 0;
+}
+.leftContainer img,
+.rightContainer img {
+  width: 100%;
 }
 .breadCrumb span {
   cursor: pointer;
@@ -167,7 +171,7 @@ hr {
     padding: 10px 20px 20px 10%;
   }
   .rightContainer {
-    padding: 10px 10% 20px 0;
+    padding: 85px 10% 20px 0;
   }
   .topContainer h1 {
     font-size: 25px;

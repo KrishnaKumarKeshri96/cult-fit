@@ -8,7 +8,7 @@ const isAuth = true;
 const CultPacks = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   return (
-    <>
+    <div>
       <div className={styles.leftContainer}>
         <img src="img/cultPacks/pack1.png" alt="pack" />
       </div>
@@ -174,7 +174,7 @@ const CultPacks = () => {
         </div>
         <hr />
       </div>
-    </>
+    </div>
   );
 };
 
