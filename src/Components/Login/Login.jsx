@@ -3,12 +3,10 @@ import { FaTimes, FaGoogle, FaFacebookF, FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
 import styled from "styled-components";
 
-export const Login = () => {
-  const [hide, setHide] = useState(false);
+export const Login = ({ hide, handleHide }) => {
   const [contentChange, setContentChange] = useState(false);
 
-  const handleHide = () => {
-    setHide(true);
+  const handleContentChange = () => {
     setContentChange(false);
   };
 
@@ -29,7 +27,12 @@ export const Login = () => {
       <LoginDiv>
         <div className={styles["login"]}>
           <div className={styles["login__cross"]}>
-            <button onClick={handleHide}>
+            <button
+              onClick={() => {
+                handleContentChange();
+                handleHide();
+              }}
+            >
               <FaTimes />
             </button>
           </div>
@@ -109,7 +112,7 @@ export const Login = () => {
           )}
         </div>
       </LoginDiv>
-      <button onClick={() => setHide(false)}>click Me</button>
+      <button>click Me</button>
     </>
   );
 };
