@@ -14,6 +14,7 @@ import SubscriptionCard from "./Components/cult/SubscriptionCard";
 import Timer from "./Components/cult/Timer";
 import WorkoutGrid from "./Components/cult/WorkoutGrid";
 import CultPacks from "./Components/cultPacks/CultPacks";
+// import Payment from "./Components/payment/Payment";
 
 function App() {
   return (
@@ -63,7 +64,7 @@ function App() {
           <Footer></Footer>
         </Route>
       </Switch>
-
+      {/* <Payment /> */}
       {/* <Route path="/login">
         <Login />
       </Route> */}
