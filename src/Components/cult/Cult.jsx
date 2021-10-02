@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./Cult.module.css";
 import Timer from "./Timer";
 import SubscriptionCard from "./SubscriptionCard";
 import WorkoutGrid from "./WorkoutGrid";
 import { Navbar } from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
+import { AppContext } from "../../Contextxts/AppContext";
 
 const Cult = () => {
+  const { history } = useContext(AppContext);
   return (
     <>
       <Navbar />
@@ -22,7 +24,28 @@ const Cult = () => {
         <div className={styles.tbPadding}>
           <div className={styles.title}>Two Free Trials</div>
           <p className={styles.subtitle}>Experience Cult classes for free</p>
-          <div className={styles.tickets}></div>
+          <div className={styles.tickets}>
+            <div>
+              <h3>01</h3>
+              <button
+                onClick={() => {
+                  history.push("/hrx");
+                }}
+              >
+                Try for free
+              </button>
+            </div>
+            <div>
+              <h3>02</h3>
+              <button
+                onClick={() => {
+                  history.push("/hrx");
+                }}
+              >
+                Try for free
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 

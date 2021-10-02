@@ -25,9 +25,11 @@ export const Navbar = () => {
   return (
     <>
       <header className={styles.nav_section}>
-        <img src={logo} alt="Logo" />
+        <Link to="/">
+          <img src={logo} alt="Logo" />
+        </Link>
         <nav>
-          <Link>
+          <Link to="/cult">
             <img src={cultIcon} alt="" />
             Cult
           </Link>

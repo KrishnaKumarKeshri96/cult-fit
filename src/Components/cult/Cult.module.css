@@ -54,10 +54,57 @@
     sans-serif;
 }
 .tickets {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+.tickets div {
   background-color: #414152;
   margin-right: 20px;
-  height: 100px;
   position: relative;
+  padding: 12px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tickets div:before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: calc(50% - 8px);
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.tickets div:after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: calc(50% - 8px);
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.tickets div h3 {
+  font-size: 35px;
+}
+
+.tickets button {
+  background-color: #ff3278;
+  border: 0;
+  color: white;
+  padding: 6px 25px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 180x;
+  font-family: BrandonTextWeb-Bold, "Helvetica Neue";
 }
 .blueWrapper {
   background-color: rgb(88, 98, 132);
