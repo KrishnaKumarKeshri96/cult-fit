@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "google-auth-library": "^7.10.0",
     "mongoose": "^5.11.15"
   }
 }

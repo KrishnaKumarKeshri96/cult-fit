@@ -153,8 +153,8 @@ export const SelectCenters = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 80%;
-  border: black 2px solid;
+  opacity: 98%;
+
   justify-content: center;
 `;
 

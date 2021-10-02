@@ -9,8 +9,10 @@ import { Navbar } from "./Components/Navbar/Navbar";
 import { Footer } from "./Components/Footer/Footer";
 import { HrxWorkout } from "./Components/HrxWorkout";
 import { ClassBooking } from "./Components/ClassBooking";
-// import { ProductPage } from "./Components/store/StoreProductPage";
-// import { CartPage } from "./Components/Cart/CartPage";
+import { ProductPage } from "./Components/store/StoreProductPage";
+import Store from "./Components/store/Store";
+import { CartPage } from "./Components/Cart/CartPage";
+import { FinalCartPage } from "./Components/Cart/FinalCartPage";
 
 function App() {
   return (
@@ -37,6 +39,18 @@ function App() {
         </Route>
         <Route path="/packcheckout" exact>
           <PackCheckout />
+        </Route>
+        <Route path="/cultstore">
+          <Store />
+        </Route>
+        <Route path="/productpage/:id">
+          <ProductPage></ProductPage>
+        </Route>
+        <Route path="/cart">
+          <FinalCartPage></FinalCartPage>
+        </Route>
+        <Route path="/landing/:id">
+          <CartPage></CartPage>
         </Route>
         <Route>Page Not Found</Route>
       </Switch>

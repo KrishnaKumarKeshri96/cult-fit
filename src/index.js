@@ -5,12 +5,15 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { AppContextProvider } from "./Contextxts/AppContext";
+import { CartDataProvider } from "../src/Components/Context/CartContext";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <AppContextProvider>
-        <App />
+        <CartDataProvider>
+          <App />
+        </CartDataProvider>
       </AppContextProvider>
     </BrowserRouter>
   </React.StrictMode>,
