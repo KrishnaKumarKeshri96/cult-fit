@@ -66,7 +66,7 @@ const CultPacks = () => {
               <div></div>
             )}
           </div>
-          <Link to="/packcheckout">
+          <Link to={selectedDate ? "/packcheckout" : "/cultpacks"}>
             <div className={styles.button}>
               {selectedDate ? "Get Pack" : "Pick a start date"}
             </div>
