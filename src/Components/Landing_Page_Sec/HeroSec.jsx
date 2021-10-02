@@ -56,6 +56,7 @@ export const HeroSec = () => {
         <div className="left_section">
           <h2>
             For the <SpanD>love</SpanD>
+            <br />
             of fit.
           </h2>
           <p>
