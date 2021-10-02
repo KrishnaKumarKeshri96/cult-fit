@@ -1,9 +1,11 @@
 .banner img {
   width: 100%;
+  margin-top: 65px;
 }
 .maxWidthContainer {
   width: 100%;
   padding: 5px 5%;
+  margin-bottom: 5px;
   /* min-height: fit-content; */
 }
 .gridContainer {
@@ -22,6 +24,6 @@
   margin-left: -7px;
   text-align: left;
 }
-.productListHeader{
-  /*  */
+.bestseller {
+  margin-left: 70px;
 }

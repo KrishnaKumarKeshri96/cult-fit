@@ -1,0 +1,101 @@
+.products_section {
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 40px;
+  font-family: "Brandon Text Regular";
+}
+
+.products_section .heading {
+  font-size: 25px;
+  padding-left: 7px;
+  color: #333;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 16px;
+  margin-top: 20px;
+}
+
+.products .product img {
+  width: 100%;
+}
+
+.products .product {
+  display: flex;
+  flex-direction: column;
+}
+
+.products .product h4 {
+  font-size: 14px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-family: "Brandon Text Medium";
+  font-weight: 300;
+}
+
+.products .product > p {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(155, 155, 155);
+}
+
+.products .product > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.products .product > div p:nth-of-type(1) {
+  font-family: "Brandon Text Bold";
+  font-size: 15px;
+  color: rgb(36, 36, 36);
+}
+
+.products .product > div p:nth-of-type(2) {
+  color: rgb(155, 155, 155);
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.products .product > div p:nth-of-type(3) {
+  font-family: "Brandon Text Medium";
+  color: rgb(255, 50, 120);
+  font-size: 12px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1300px) {
+  .products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .products_section {
+    max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .products {
+    grid-template-columns: 1fr 1fr;
+  }
+  .products_section {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .products {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .products_section {
+    width: 100%;
+  }
+}

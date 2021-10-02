@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./Cult.module.css";
 import Timer from "./Timer";
 import SubscriptionCard from "./SubscriptionCard";
 import WorkoutGrid from "./WorkoutGrid";
+import { AppContext } from "../../Contextxts/AppContext";
 
 const Cult = () => {
+  const { history } = useContext(AppContext);
   return (
     <>
       <div className={styles.maxWidthContainer}>
@@ -22,11 +24,23 @@ const Cult = () => {
           <div className={styles.tickets}>
             <div>
               <h3>01</h3>
-              <button>Try for free</button>
+              <button
+                onClick={() => {
+                  history.push("/hrx");
+                }}
+              >
+                Try for free
+              </button>
             </div>
             <div>
               <h3>02</h3>
-              <button>Try for free</button>
+              <button
+                onClick={() => {
+                  history.push("/hrx");
+                }}
+              >
+                Try for free
+              </button>
             </div>
           </div>
         </div>

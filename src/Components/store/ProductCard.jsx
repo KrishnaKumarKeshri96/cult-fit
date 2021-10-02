@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-const ProductCard = () => {
+const ProductCard = ({ name, price, actualPrice, disc, img, category }) => {
   return (
     <ProductDiv>
       <div className="img">
-        <img src="img/store/p1.jpeg" alt="product" />
+        <img src={img[0]} alt={category} />
       </div>
       <div className="brand">CULTSPORT</div>
-      <div className="productTitle">Women's Dumbbell Training Tee</div>
+      <div className="productTitle">{name}</div>
       <PriceContainer>
-        <p className="finalPrice">₹ 479</p>
-        <p className="listingPrice">₹ 1199</p>
-        <p className="discount">60% Off</p>
+        <p className="finalPrice">₹ {actualPrice}</p>
+        <p className="listingPrice">₹ {price}</p>
+        <p className="discount">{disc}% Off</p>
       </PriceContainer>
     </ProductDiv>
   );
@@ -57,9 +57,14 @@ const ProductDiv = styled.div`
     margin-top: 10px;
     text-transform: uppercase;
   }
+  & img {
+    width: 16vw;
+    height: 50vh;
+  }
 
   & .productTitle {
     font-size: 14px;
+    width: 16vw;
     line-height: 16px;
     margin-top: 2px;
     color: #9b9b9b;

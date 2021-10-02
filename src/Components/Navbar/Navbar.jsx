@@ -11,30 +11,26 @@ import carefit from "../../images/carefit-blk.svg";
 import storeIcon from "../../images/store-icon.svg";
 import userImg from "../../images/user-image.svg";
 import cart from "../../images/cart-image.svg";
+
+import { Login } from "../Login/Login";
 import { useContext, useState } from "react";
 import { AppContext } from "../../Contextxts/AppContext";
-import { Login } from "../Login/Login";
 
 export const Navbar = () => {
-  // const history = useHistory();
   const [hide, setHide] = useState(true);
 
+  const { isLoggedIn, userData } = useContext(AppContext);
+
   const handleHide = () => {
-    setHide(false);
+    setHide(true);
   };
-  const { isLoggedIn, userData, history } = useContext(AppContext);
+
   return (
     <>
       <header className={styles.nav_section}>
-        <img
-          onClick={() => {
-            history.push("/");
-          }}
-          src={logo}
-          alt="Logo"
-        />
+        <img src={logo} alt="Logo" />
         <nav>
-          <Link>
+          <Link to="/">
             <img src={cultIcon} alt="" />
             Cult
           </Link>
@@ -54,30 +50,29 @@ export const Navbar = () => {
             <img src={carefit} alt="" />
             Care
           </Link>
-          <Link>
-            <img
-              onClick={() => {
-                history.push("/cart");
-              }}
-              src={storeIcon}
-              alt=""
-            />
+          <Link to="/cultstore">
+            <img src={storeIcon} alt="" />
             Store
           </Link>
         </nav>
 
         <div className={styles.right_section}>
           <Link>Bangalore</Link>
-          <div onClick={handleHide}>
+          <div
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              setHide(false);
+            }}
+          >
             <img src={userImg} alt="" />
-            {/* <Link to="/login">{isLoggedIn ? userData.name : "Login"}login</Link> */}
+            {isLoggedIn ? userData.name : ""}
           </div>
           <Link>
             <img src={cart} alt="Cart" />
           </Link>
         </div>
       </header>
-      <Login></Login>
+      <Login hide={hide} handleHide={handleHide} setHide={setHide} />
     </>
   );
 };

@@ -18,6 +18,8 @@ import { LandingPage } from "./Components/Landing_Page_Sec/LandingPage/LandingPa
 import { GoogleLogin } from "react-google-login";
 import { AppContext } from "./Contextxts/AppContext";
 import { useContext } from "react";
+import Store from "./Components/store/Store";
+import { ProductPage } from "./Components/store/StoreProductPage";
 
 function App() {
   const { handleLogin } = useContext(AppContext);
@@ -71,6 +73,24 @@ function App() {
           <Footer></Footer>
         </Route>
 
+        <Route exact path="/login">
+          <Navbar></Navbar>
+          <Login></Login>
+          <Footer></Footer>
+        </Route>
+
+        <Route path="/landing/:id">
+          <CartPage></CartPage>
+        </Route>
+
+        <Route exact path="/cultstore">
+          <Store></Store>
+        </Route>
+
+        <Route path="/productpage/:id">
+          <ProductPage></ProductPage>
+        </Route>
+
         <Route>
           <Navbar></Navbar>
           <div
@@ -80,14 +100,14 @@ function App() {
               marginLeft: "5%",
             }}
           >
-            <GoogleLogin
+            {/* <GoogleLogin
               // clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
               clientId="755998271801-nnrchkokeh4u5ekiffuuprgec1lmmjca.apps.googleusercontent.com"
               buttonText="Log in with Google"
               onSuccess={handleLogin}
               onFailure={handleLogin}
               cookiePolicy={"single_host_origin"}
-            />
+            /> */}
             <h1>Oops...! It seems to be 404</h1>
           </div>
           <Footer></Footer>

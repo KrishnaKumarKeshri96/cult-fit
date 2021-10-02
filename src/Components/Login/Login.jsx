@@ -4,12 +4,13 @@ import { useContext, useState } from "react";
 import styled from "styled-components";
 import { GoogleLogin } from "react-google-login";
 import { AppContext } from "../../Contextxts/AppContext";
-export const Login = () => {
-  const [hide, setHide] = useState(false);
+
+export const Login = ({ hide, handleHide, setHide }) => {
   const [contentChange, setContentChange] = useState(false);
 
-  const handleHide = () => {
-    setHide(true);
+  const { handleLogin, isLoggedIn } = useContext(AppContext);
+
+  const handleContentChange = () => {
     setContentChange(false);
   };
 
@@ -25,14 +26,17 @@ export const Login = () => {
     background-color: rgba(128, 128, 128, 0.555);
   `;
 
-  // const { handleLogin } = useContext(AppContext);
-
   return (
     <>
       <LoginDiv>
         <div className={styles["login"]}>
           <div className={styles["login__cross"]}>
-            <button onClick={handleHide}>
+            <button
+              onClick={() => {
+                handleContentChange();
+                handleHide();
+              }}
+            >
               <FaTimes />
             </button>
           </div>
@@ -68,7 +72,7 @@ export const Login = () => {
             </>
           ) : (
             <>
-              <button
+              {/* <button
                 className={`${styles["google"]} ${styles["login__options"]} `}
                 style={{ margin: "10px auto" }}
               >
@@ -77,8 +81,16 @@ export const Login = () => {
                   alt="google"
                 />
                 <h4 style={{ color: "white" }}>Sign in with Google</h4>
-              </button>
-
+              </button> */}
+              <GoogleLogin
+                onClick={handleHide}
+                // clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+                clientId="755998271801-nnrchkokeh4u5ekiffuuprgec1lmmjca.apps.googleusercontent.com"
+                buttonText="Log in with Google"
+                onSuccess={handleLogin}
+                onFailure={handleLogin}
+                cookiePolicy={"single_host_origin"}
+              />
               <button
                 className={`${styles["facebook"]} ${styles["login__options"]} `}
                 style={{ margin: "10px auto" }}
@@ -113,7 +125,7 @@ export const Login = () => {
           )}
         </div>
       </LoginDiv>
-      <button onClick={() => setHide(true)}>click Me</button>
+      <button>click Me</button>
     </>
   );
 };
