@@ -37,6 +37,7 @@ const Grid = styled.div`
 const GridItem = styled.div`
   width: 100%;
   position: relative;
+  cursor: pointer;
 
   & p {
     position: absolute;

@@ -16,7 +16,14 @@ const CultPacks = () => {
   const [hide, setHide] = useState(true);
 
   const handleGetPack = () => {
-    isLoggedIn ? history.push("/packcheckout") : setHide(false);
+    if (!isLoggedIn) {
+      setHide(false);
+    } else if (selectedDate) {
+      history.push("/packcheckout");
+    } else {
+      alert("Please select a starting date");
+    }
+    // !isLoggedIn ? setHide( false ) : selectedDate ? history.push( "/packcheckout" ) :
   };
 
   const handleHide = () => {

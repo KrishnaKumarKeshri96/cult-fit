@@ -31,6 +31,7 @@ li {
   margin: auto;
   padding: 0px 16px;
 }
+
 /* HERO SECTION */
 .hero_section {
   display: flex;
@@ -44,9 +45,10 @@ li {
   width: 31.7%;
   margin-top: -8px;
 }
+
 .hero_section h2 {
   font-size: 50px;
-  max-width: 270px;
+  max-width: 280px;
   color: #333;
 }
 
@@ -138,7 +140,7 @@ li {
 
   .hero_section h2 {
     font-size: 30px;
-    max-width: 160px;
+    max-width: 170px;
     line-height: 30px;
   }
 
@@ -152,5 +154,22 @@ li {
   .banner_section {
     max-width: 100%;
     margin-top: 50px;
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

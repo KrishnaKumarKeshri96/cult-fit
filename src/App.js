@@ -13,6 +13,7 @@ import { ProductPage } from "./Components/store/StoreProductPage";
 import Store from "./Components/store/Store";
 import { CartPage } from "./Components/Cart/CartPage";
 import { FinalCartPage } from "./Components/Cart/FinalCartPage";
+import Thanks from "./Components/Thanks";
 // import { PrivateRoute } from "./Components/PrivateRoute/PrivateRoute";
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <LandingPage />
+        </Route>
+        <Route path="/thanks" exact>
+          <Thanks />
         </Route>
         <Route path="/hrx" exact>
           <Navbar />

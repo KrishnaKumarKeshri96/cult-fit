@@ -82,7 +82,12 @@ const PackCheckout = () => {
         </div>
       </Container>
       <Footer />
-      <Payment hide={hide} setHide={setHide} total={6490.0} />
+      <Payment
+        hide={hide}
+        setHide={setHide}
+        total={6490.0}
+        item={"3 Months cultpass BLACK"}
+      />
     </>
   );
 };
@@ -195,4 +200,5 @@ const Button = styled.div`
   width: fit-content;
   margin: 5px 0 5px auto;
   color: #ffffff;
+  cursor: pointer;
 `;
