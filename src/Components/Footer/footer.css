@@ -1,0 +1,225 @@
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+}
+footer .container {
+  max-width: 1284px;
+}
+
+footer a {
+  color: white;
+}
+
+footer .top_section {
+  display: grid;
+  grid-template-columns: 2.3fr 1fr 1.3fr 1.2fr;
+  gap: 40px;
+  text-align: right;
+  padding: 50px 0px;
+  margin: 0px 15px;
+  color: white;
+}
+
+footer .top_section .logo_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 20px;
+  font-family: "Brandon Text Regular";
+  font-size: 14px;
+  color: #a2a2a2;
+}
+footer .top_section .logo_section img {
+  height: 40px;
+}
+
+footer .top_section .about_links a,
+footer .top_section .business_links a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Brandon Text Thin";
+}
+
+footer .top_section .about_links ul,
+footer .top_section .business_links ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 1.94;
+}
+
+footer .top_section .download_app {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .top_section .download_app img {
+  height: 42px;
+}
+
+footer .top_section > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Related searches */
+.related_searches_section {
+  padding: 32px;
+  background-color: #111213;
+  padding-bottom: 50px;
+}
+
+.related_searches_section .search_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.related_searches_section .search_list a {
+  font-size: 14px;
+  line-height: 1.428;
+  color: #a2a2a2;
+  font-family: "Brandon Text Regular";
+}
+
+.related_searches_section h4 {
+  font-size: 14px;
+  font-family: "Brandon Text Regular";
+  color: #a2a2a2;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #6a6a6a;
+}
+
+/* footer bottom */
+footer .bottom {
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+footer .bottom .links {
+  display: flex;
+  gap: 20px;
+}
+
+footer .bottom .links a {
+  font-size: 12px;
+  color: #a2a2a2;
+  font-family: "Brandon Text Regular";
+}
+
+footer .social_icons {
+  display: flex;
+  gap: 20px;
+}
+footer .social_icons img {
+  height: 12px;
+  filter: invert(0.5);
+}
+
+footer .social_icons a:hover {
+  height: 12px;
+  filter: brightness(100);
+}
+
+/* Responsive */
+/* For 1300px and lower */
+@media only screen and (max-width: 1300px) {
+  /* Footer section */
+  footer .container {
+    max-width: 990px;
+  }
+}
+
+/* For 1000px and lower */
+@media only screen and (max-width: 1000px) {
+  /* Footer section */
+  footer .container {
+    max-width: 770px;
+  }
+
+  .related_searches_section .search_list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* For 768px and lower */
+@media only screen and (max-width: 768px) {
+  /* Footer section */
+  footer .top_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: left;
+    padding: 50px 0px;
+    margin: 0px 15px;
+    color: white;
+  }
+
+  footer .top_section .about_links a,
+  footer .top_section .business_links a {
+    font-weight: 200;
+    font-family: "Brandon Text Regular";
+  }
+
+  footer .top_section .about_links ul,
+  footer .top_section .business_links ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 1;
+    gap: 12px;
+  }
+
+  footer .top_section .business_links ul li {
+    white-space: nowrap;
+  }
+
+  footer .top_section .download_app {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  /* Related searches */
+  .related_searches_section {
+    padding: 22px;
+    background-color: #111213;
+    padding-bottom: 50px;
+  }
+
+  /* Footer bottom */
+  footer .bottom {
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+  }
+
+  footer .bottom .links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  footer .social_icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+  }
+}

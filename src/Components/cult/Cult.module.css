@@ -1,0 +1,206 @@
+.mt {
+  margin-top: 40px;
+}
+.banner img {
+  width: 100%;
+}
+.maxWidthContainer {
+  width: 100%;
+  /* padding: 5px 5%; */
+  /* min-height: fit-content; */
+}
+.maxWidthContainer img {
+  width: 100%;
+  /* margin-bottom: 5px; */
+}
+.fixWidthContainer {
+  width: 70%;
+  margin: auto;
+  /* padding: 5px 5%; */
+  /* min-height: fit-content; */
+}
+@media only screen and (max-width: 600px) {
+  .fixWidthContainer {
+    width: 90%;
+  }
+}
+.fixWidthContainer img {
+  width: 100%;
+  /* margin-bottom: 5px; */
+}
+.timer {
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+}
+.tbPadding {
+  padding: 40px 0;
+}
+.title {
+  color: #33363f;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+}
+.subtitle {
+  font-size: 16px;
+  color: #908e8e;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: BrandonTextWeb-Medium, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+}
+.tickets {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+.tickets div {
+  background-color: #414152;
+  margin-right: 20px;
+  position: relative;
+  padding: 12px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tickets div:before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: calc(50% - 8px);
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.tickets div:after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: calc(50% - 8px);
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.tickets div h3 {
+  font-size: 35px;
+}
+
+.tickets button {
+  background-color: #ff3278;
+  border: 0;
+  color: white;
+  padding: 6px 25px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 180x;
+  font-family: BrandonTextWeb-Bold, "Helvetica Neue";
+}
+.blueWrapper {
+  background-color: rgb(88, 98, 132);
+  margin: 40px 0px;
+  color: rgb(255, 255, 255);
+}
+.insideTitle {
+  font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 30px;
+}
+.insideSubitle {
+  color: rgb(136, 142, 158);
+  font-size: 16px;
+  text-align: center;
+  font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+}
+.blueWrapper h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+}
+.blueWrapper h3 span {
+  margin: 0px 1%;
+  font-size: 16px;
+}
+.line div {
+  display: inline-block;
+  margin-bottom: 5px;
+  height: 1px;
+  width: 15%;
+  background-color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 480px) {
+  .line div {
+    width: 6%;
+  }
+}
+
+.benifits {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0px;
+}
+.benifits div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.benifits p {
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.benifits span {
+  margin: 5px 0px 0px 5px;
+  font-size: 16px;
+}
+.heading {
+  font-size: 16px;
+  font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+.gridTitle {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.quickLink {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 20px 0 15px 0;
+}
+
+.quote1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+.quote2 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.quote3 {
+  color: #8d93a0;
+  font-size: 40px;
+  font-weight: bold;
+}

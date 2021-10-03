@@ -1,0 +1,241 @@
+/* CULT SECTION */
+
+.home_card_section {
+  margin-top: 90px;
+}
+
+.home_card_section .top_section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+}
+
+.home_card_section .top_section>img {
+  height: 50px;
+  font-family: "Brandon Text Bold";
+  color: #333;
+}
+
+.home_card_section .top_section>p {
+  font-size: 14.1px;
+  font-family: "Brandon Text Regular";
+  color: #6c6c6c;
+  line-height: 27px;
+}
+
+.home_card_section .top_section .sub_heading_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.home_card_section .top_section .sub_heading_section a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4c4c4c;
+  font-family: "Brandon Text Bold";
+  font-size: 18px;
+}
+
+.home_card_section .top_section .sub_heading_section a:hover {
+  filter: brightness(1.8);
+}
+
+.home_card_section .top_section .sub_heading_section img {
+  width: 10px;
+  transform: rotate(180deg);
+}
+
+.home_card_section .top_section .subheading {
+  color: #4c4c4c;
+  font-size: 20px;
+}
+
+/* Slider section */
+
+.cards {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  width: 100%;
+  height: 470px;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 45px;
+}
+
+.card {
+  padding: 40px;
+  overflow: hidden;
+  color: white;
+}
+
+.cards>div h3 {
+  position: relative;
+  font-size: 18px;
+}
+
+.cards>div .content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 0.3s ease;
+  position: absolute;
+  width: 290px;
+  margin-top: 20px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.cards>.card1 .content {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.cards>div .content p {
+  font-family: "Brandon Text Regular";
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.button_style1 {
+  color: white;
+  background-color: transparent;
+  border: 1.5px solid white;
+  padding: 6px 10px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-family: "Brandon Text Bold";
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button_style1:hover {
+  transform: translateY(-4px);
+}
+
+.cards>div:hover {
+  cursor: pointer;
+}
+
+.cards img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 616px;
+  object-fit: cover;
+  object-position: 80% 0;
+}
+
+.card1 {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  will-change: transform, opacity;
+}
+
+.card2 {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s ease 0.1s;
+  will-change: transform, opacity;
+}
+
+.card3 {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.3s ease 0.22s;
+  will-change: transform, opacity;
+}
+
+/* Responsive
+/* For 1300px and lower */
+@media only screen and (max-width: 1300px) {
+
+  /* HOME CARDS SECTION */
+  .home_card_section {
+    margin-top: 60px;
+    max-width: 925px;
+  }
+}
+
+/* For 1000px and lower */
+@media only screen and (max-width: 1000px) {
+
+  /* HOME CARDS SECTION */
+  .home_card_section {
+    margin-top: 60px;
+    max-width: 700px;
+  }
+}
+
+/* For 768px and lower */
+@media only screen and (max-width: 768px) {
+  /* HOME CARDS SECTION */
+
+  .home_card_section {
+    margin-top: 85px;
+    max-width: 100%;
+  }
+
+  .home_card_section .top_section .subheading {
+    font-size: 18px;
+  }
+
+  .home_card_section .top_section>p {
+    font-size: 13px;
+  }
+
+  .home_card_section .top_section .sub_heading_section span {
+    display: none;
+  }
+
+  /* Slider section */
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3.3fr 1fr 1fr;
+    gap: 6px;
+    width: 100%;
+    height: 480px;
+    transition: all 0.5s ease;
+    margin-top: 30px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .cards>div .content {
+    width: 60%;
+    margin-top: 10px;
+    gap: 10px;
+    transform: translateY(200px);
+  }
+
+  .cards>div .content p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .button_style1 {
+    width: 80%;
+  }
+
+  .cards img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80% 40%;
+  }
+}

@@ -1,0 +1,141 @@
+.get_the_app_section {
+  background: linear-gradient(to right, #6f69aa, #378ac5);
+  color: white;
+  margin-top: 70px;
+  overflow: hidden;
+}
+
+.get_the_app_section .container {
+  display: flex;
+  height: 600px;
+  align-items: center;
+  padding: 0px 110px;
+}
+
+.get_the_app_section .container .left_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.428;
+}
+
+.get_the_app_section .container .left_section h3 {
+  font-size: 36px;
+}
+
+.get_the_app_section .container .left_section p {
+  font-size: 19px;
+}
+
+.get_the_app_section .container .left_section div {
+  display: flex;
+  gap: 2vw;
+}
+.get_the_app_section .container .left_section div img {
+  height: 2.5vw;
+}
+
+.get_the_app_section .container .right_section img {
+  height: 340px;
+  position: relative;
+  left: 50px;
+  top: -50px;
+}
+
+/* CULT BUSINESS SECTION */
+.cult_business_section {
+  height: 36.2vw;
+}
+
+.cult_business_section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* CULT CAREER SECTION */
+.cult_career_section {
+  height: 35.5vw;
+}
+
+.cult_career_section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* BE BETTER SECTION */
+
+.be_better_section .container {
+  min-height: 305px;
+  display: flex;
+  align-items: center;
+  max-width: 1236px;
+}
+
+.be_better_section h2 {
+  width: 700px;
+  font-size: 100px;
+  letter-spacing: -0.6px;
+  color: #6e6e6e;
+  text-transform: uppercase;
+  line-height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.be_better_section h2 span {
+  color: #b2b2b2;
+  font-size: 80px;
+}
+
+/* Responsive */
+/* For 1300px and lower */
+@media only screen and (max-width: 1300px) {
+  /* GET THE APP SECTION */
+  .get_the_app_section .container {
+    max-width: 925px;
+  }
+
+  /* BE BETTER SECTION */
+  .be_better_section .container {
+    max-width: 925px;
+  }
+}
+
+/* For 1000px and lower */
+@media only screen and (max-width: 1000px) {
+  /* GET THE APP SECTION */
+  .get_the_app_section .container {
+    max-width: 700px;
+    padding: 0px 60px;
+  }
+
+  /* BE BETTER SECTION */
+  .be_better_section .container {
+    margin-top: 40px;
+    max-width: 700px;
+  }
+}
+
+/* For 768px and lower */
+@media only screen and (max-width: 768px) {
+  /* GET THE APP SECTION */
+  .get_the_app_section .container {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  /* BE BETTER SECTION */
+  .be_better_section .container {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  /* BE BETTER SECTION */
+  .be_better_section h2 {
+    font-size: 15vw;
+    line-height: 15vw;
+  }
+  /* BE BETTER SECTION */
+  .be_better_section h2 span {
+    font-size: 15vw;
+  }
+}
