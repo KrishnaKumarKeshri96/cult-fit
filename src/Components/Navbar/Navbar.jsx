@@ -13,11 +13,12 @@ import userImg from "../../images/user-image.svg";
 import cart from "../../images/cart-image.svg";
 
 import { Login } from "../Login/Login";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AppContext } from "../../Contextxts/AppContext";
 
 export const Navbar = () => {
   const [hide, setHide] = useState(true);
-
+  const { isLoggedIn, userData, handleLogout } = useContext(AppContext);
   const handleHide = () => {
     setHide(true);
   };
@@ -57,14 +58,24 @@ export const Navbar = () => {
 
         <div className={styles.right_section}>
           <Link>Bangalore</Link>
-          <div
-            style={{ cursor: "pointer" }}
-            onClick={() => {
-              setHide(false);
-            }}
-          >
-            <img src={userImg} alt="" />
-          </div>
+          {isLoggedIn ? (
+            <>
+              <img src={userImg} alt="" />
+              <div style={{ cursor: "pointer" }} onClick={handleLogout}>
+                {userData.name}
+              </div>
+            </>
+          ) : (
+            <div
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                setHide(false);
+              }}
+            >
+              <img src={userImg} alt="" />
+            </div>
+          )}
+
           <Link>
             <img src={cart} alt="Cart" />
           </Link>

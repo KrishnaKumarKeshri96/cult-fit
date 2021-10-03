@@ -154,7 +154,10 @@ export const SelectCenters = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 98%;
-
+  // background-color: rgba(128, 128, 128, 0.555);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 10px;
   justify-content: center;
 `;
 
