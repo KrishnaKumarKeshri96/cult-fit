@@ -1,17 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import styles from "./CultPacks.module.css";
 import DateSelector from "./DateSelector";
 import { Navbar } from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
+import { AppContext } from "../../Contextxts/AppContext";
+import { Login } from "../Login/Login";
 
 const workouts = ["Yoga", "Boxing", "S&C", "HRX Workout", "Dance Fitness"];
-const isAuth = true;
+// const isAuth = true;
 
 const CultPacks = () => {
+  const { isLoggedIn, history } = useContext(AppContext);
   const [selectedDate, setSelectedDate] = useState(null);
+  const [hide, setHide] = useState(true);
+
+  const handleGetPack = () => {
+    isLoggedIn ? history.push("/packcheckout") : setHide(false);
+  };
+
+  const handleHide = () => {
+    setHide(true);
+  };
+
   return (
     <>
+      <Login hide={hide} handleHide={handleHide} />
       <Navbar />
       <div>
         <div className={styles.leftContainer}>
@@ -32,7 +46,7 @@ const CultPacks = () => {
           </div>
 
           <div className={styles.optionContainer}>
-            {isAuth ? (
+            {isLoggedIn ? (
               <>
                 <div className={styles.center}>
                   <p>Preferred centre: </p>
@@ -66,11 +80,15 @@ const CultPacks = () => {
               <div></div>
             )}
           </div>
-          <Link to={selectedDate ? "/packcheckout" : "/cultpacks"}>
-            <div className={styles.button}>
-              {selectedDate ? "Get Pack" : "Pick a start date"}
-            </div>
-          </Link>
+          {/* <Link to={selectedDate ? "/packcheckout" : "/cultpacks"}> */}
+          <div onClick={handleGetPack} className={styles.button}>
+            {!isLoggedIn
+              ? "Get Pack"
+              : selectedDate
+              ? "Get Pack"
+              : "Pick a start date"}
+          </div>
+          {/* </Link> */}
           <hr />
 
           <div className={styles.contentWrapper}>
