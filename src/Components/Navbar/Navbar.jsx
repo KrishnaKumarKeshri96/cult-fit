@@ -76,7 +76,7 @@ export const Navbar = () => {
             </div>
           )}
 
-          <Link>
+          <Link to="/cart">
             <img src={cart} alt="Cart" />
           </Link>
         </div>
