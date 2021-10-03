@@ -1,0 +1,175 @@
+/* Variables */
+:root {
+  --primary-color: #00abe9;
+  --secondary-color: #ff3278;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Brandon Text";
+  width: 100%;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1236px;
+  margin: auto;
+  padding: 0px 16px;
+}
+
+/* HERO SECTION */
+.hero_section {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: calc(80px + 64px);
+}
+
+/* left section */
+.hero_section .left_section {
+  width: 31.7%;
+  margin-top: -8px;
+}
+
+.hero_section h2 {
+  font-size: 50px;
+  max-width: 280px;
+  color: #333;
+}
+
+.hero_section h2 span {
+  color: var(--primary-color);
+}
+
+.hero_section p {
+  color: #6e6d6d;
+  font-size: 18px;
+  line-height: 40px;
+  margin-top: 20px;
+  font-family: "Brandon Text Bold";
+}
+
+.title_anim {
+  display: inline-block;
+  transform: translateY(-40px);
+  animation: slidedown 3.5s infinite;
+}
+
+/* right section */
+.hero_section .right_section video {
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* BANNER SECTION */
+.banner_section {
+  margin-top: 98px;
+}
+
+.banner_section img {
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+/* Responsive */
+/* For 1300px and lower */
+@media only screen and (max-width: 1300px) {
+  /* Hero Section */
+  .hero_section {
+    max-width: 925px;
+  }
+
+  .hero_section .left_section {
+    width: 42%;
+  }
+
+  /* BANNER SECTION */
+  .banner_section {
+    max-width: 925px;
+  }
+}
+
+/* For 1000px and lower */
+@media only screen and (max-width: 1000px) {
+  /* Hero Section */
+  .hero_section {
+    max-width: 700px;
+  }
+
+  .hero_section .left_section {
+    width: 60%;
+  }
+
+  /* BANNER SECTION */
+  .banner_section {
+    max-width: 700px;
+  }
+}
+
+/* For 768px and lower */
+@media only screen and (max-width: 768px) {
+  /* HERO SECTION */
+  .hero_section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    max-width: 768px;
+  }
+
+  .hero_section .left_section {
+    width: 90%;
+  }
+
+  .hero_section h2 {
+    font-size: 30px;
+    max-width: 170px;
+    line-height: 30px;
+  }
+
+  .hero_section p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  /* BANNER SECTION */
+  .banner_section {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
