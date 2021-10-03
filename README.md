@@ -102,7 +102,7 @@ Inside cult-fit & backeend-cultfit install with npm
 
 **Client:** Styled-Components, Axios, React-Datepicker,React-Icons,React-Slick,Slick-Carousel
 
-**Server:** Google-Auth-Library
+**Server:** Google-Auth-Library, cors
 
 ## Authors
 
