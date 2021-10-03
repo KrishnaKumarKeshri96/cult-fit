@@ -43,22 +43,22 @@ const Timer = () => {
   return (
     <TimerContainer>
       <div className="timer">
-        <div className="time">{days}</div>
+        <div className="time">{days > 9 ? days : `0${days}`}</div>
         <div className="unit">Day</div>
       </div>
       <Seperator>&nbsp;&nbsp;:&nbsp;&nbsp;</Seperator>
       <div className="timer">
-        <div className="time">{hours}</div>
+        <div className="time">{hours > 9 ? hours : `0${hours}`}</div>
         <div className="unit">Hr</div>
       </div>
       <Seperator>&nbsp;&nbsp;:&nbsp;&nbsp;</Seperator>
       <div className="timer">
-        <div className="time">{minutes}</div>
+        <div className="time">{minutes > 9 ? minutes : `0${minutes}`}</div>
         <div className="unit">Min</div>
       </div>
       <Seperator>&nbsp;&nbsp;:&nbsp;&nbsp;</Seperator>
       <div className="timer">
-        <div className="time">{seconds}</div>
+        <div className="time">{seconds > 9 ? seconds : `0${seconds}`}</div>
         <div className="unit">Sec</div>
       </div>
       <img src="img/cult/Vector.svg" alt="Go" />
