@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 // import styles from "./PackCheckout.module.css";
 import styled from "styled-components";
 import { Navbar } from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
+import Payment from "../Payment";
 
 const PackCheckout = () => {
+  const [hide, setHide] = useState(true);
   return (
     <>
       <Navbar />
@@ -68,11 +70,18 @@ const PackCheckout = () => {
                 <p>₹ 6490.00</p>
               </p>
               <br />
-              <Button>Proceed to pay</Button>
+              <Button
+                onClick={() => {
+                  setHide(false);
+                }}
+              >
+                Proceed to pay
+              </Button>
             </div>
           </Grid>
         </div>
       </Container>
+      <Payment hide={hide} setHide={setHide} />
       <Footer />
     </>
   );
