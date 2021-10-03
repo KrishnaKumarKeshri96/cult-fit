@@ -1,0 +1,29 @@
+.banner img {
+  width: 100%;
+  margin-top: 65px;
+}
+.maxWidthContainer {
+  width: 100%;
+  padding: 5px 5%;
+  margin-bottom: 5px;
+  /* min-height: fit-content; */
+}
+.gridContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.gridContainer img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.maxWidthContainer .bannerTitle {
+  font-size: 24px;
+}
+.carousel .slick-dots {
+  padding-left: 5%;
+  margin-left: -7px;
+  text-align: left;
+}
+.bestseller {
+  margin-left: 70px;
+}
