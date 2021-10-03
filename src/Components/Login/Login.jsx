@@ -1,11 +1,17 @@
 import styles from "./login.module.css";
 import { FaTimes, FaGoogle, FaFacebookF, FaEnvelope } from "react-icons/fa";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import styled from "styled-components";
+import { GoogleLogin } from "react-google-login";
+import { AppContext } from "../../Contextxts/AppContext";
 
 export const Login = ({ hide, handleHide }) => {
   const [contentChange, setContentChange] = useState(false);
-
+  const { handleLogin } = useContext(AppContext);
+  const handleClick = (googleUser) => {
+    handleHide();
+    handleLogin(googleUser);
+  };
   const handleContentChange = () => {
     setContentChange(false);
   };
@@ -68,7 +74,7 @@ export const Login = ({ hide, handleHide }) => {
             </>
           ) : (
             <>
-              <button
+              {/* <button
                 className={`${styles["google"]} ${styles["login__options"]} `}
                 style={{ margin: "10px auto" }}
               >
@@ -77,7 +83,15 @@ export const Login = ({ hide, handleHide }) => {
                   alt="google"
                 />
                 <h4 style={{ color: "white" }}>Sign in with Google</h4>
-              </button>
+              </button> */}
+              <GoogleLogin
+                // clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+                clientId="755998271801-nnrchkokeh4u5ekiffuuprgec1lmmjca.apps.googleusercontent.com"
+                buttonText="Log in with Google"
+                onSuccess={handleClick}
+                onFailure={handleClick}
+                cookiePolicy={"single_host_origin"}
+              />
               <button
                 className={`${styles["facebook"]} ${styles["login__options"]} `}
                 style={{ margin: "10px auto" }}
