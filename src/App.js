@@ -13,6 +13,7 @@ import { ProductPage } from "./Components/store/StoreProductPage";
 import Store from "./Components/store/Store";
 import { CartPage } from "./Components/Cart/CartPage";
 import { FinalCartPage } from "./Components/Cart/FinalCartPage";
+// import { PrivateRoute } from "./Components/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
