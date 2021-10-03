@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Payment = ({ hide, setHide }) => {
+const Payment = ({ hide, setHide, total }) => {
   console.log("hide:", hide);
   return (
     <PaymentDiv display={hide ? "none" : "block"}>
@@ -22,7 +22,7 @@ const Payment = ({ hide, setHide }) => {
               <h4>3 Months cultpass BLACK</h4>
               <p>Incl. of all taxes</p>
             </div>
-            <h3>₹ 9990</h3>
+            <h3>₹ {total}</h3>
           </div>
           <div className="options">
             <div>
@@ -150,7 +150,7 @@ const PaymentDiv = styled.div`
     width: 100%;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.13);
-    z-index: 100;
+    z-index: 101;
     position: absolute;
     top: 0;
     left: 0;

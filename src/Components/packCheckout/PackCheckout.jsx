@@ -81,8 +81,8 @@ const PackCheckout = () => {
           </Grid>
         </div>
       </Container>
-      <Payment hide={hide} setHide={setHide} />
       <Footer />
+      <Payment hide={hide} setHide={setHide} total={6490.0} />
     </>
   );
 };
