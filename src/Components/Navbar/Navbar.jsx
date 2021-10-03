@@ -34,19 +34,19 @@ export const Navbar = () => {
             <img src={cultIcon} alt="" />
             Cult
           </Link>
-          <Link>
+          <Link to="/">
             <img src={liveFit} alt="" />
             Live
           </Link>
-          <Link>
+          <Link to="/">
             <img src={eatIcon} alt="" />
             Eat
           </Link>
-          <Link>
+          <Link to="/">
             <img src={mindIcon} alt="" />
             Mind
           </Link>
-          <Link>
+          <Link to="/">
             <img src={carefit} alt="" />
             Care
           </Link>
@@ -57,7 +57,7 @@ export const Navbar = () => {
         </nav>
 
         <div className={styles.right_section}>
-          <Link>Bangalore</Link>
+          <Link to="/">Bangalore</Link>
           {isLoggedIn ? (
             <>
               <img src={userImg} alt="" />
