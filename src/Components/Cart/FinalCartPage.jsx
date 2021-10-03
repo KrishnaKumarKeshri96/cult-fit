@@ -144,6 +144,7 @@ export const FinalCartPage = () => {
               </div>
               <div className="cart__right__purchase__row_last">
                 <button
+                  style={{ cursor: "pointer" }}
                   onClick={() => {
                     isLoggedIn ? setPayment(false) : setLogin(false);
                   }}
