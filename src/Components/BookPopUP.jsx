@@ -2,17 +2,8 @@ import { useContext } from "react";
 import styled from "styled-components";
 import { AppContext } from "../Contextxts/AppContext";
 
-export const BookPopUp = ({ hide, handleHide }) => {
+export const BookPopUp = ({ hide, handleHide, handleBtn }) => {
   const { isLoggedIn, history } = useContext(AppContext);
-
-  const handleBtn = () => {
-    if (isLoggedIn) {
-      //redirect to thank you
-      history.push("/thanks");
-    } else {
-      // call login
-    }
-  };
 
   const PopDiv = styled.div`
     @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");

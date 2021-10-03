@@ -278,7 +278,7 @@ export const ClassBooking = () => {
             </SmallBannerImg>
           </SmallBanner>
           <Slots>
-            <SlotDiv>08:00 PM</SlotDiv>
+            <SlotDiv>06:00 AM</SlotDiv>
             <SlotDiv>
               <GreenBtn
                 onClick={() => {
@@ -295,51 +295,121 @@ export const ClassBooking = () => {
           </Slots>
           <hr></hr>
           <Slots>
-            <SlotDiv>08:00 PM</SlotDiv>
+            <SlotDiv>07:00 AM</SlotDiv>
             <SlotDiv>
-              <GreenBtn>HRX WORKOUT</GreenBtn>
+              <GreenBtn
+                onClick={() => {
+                  if (!isLoggedIn) {
+                    handleHide();
+                  } else {
+                    handleBookPop();
+                  }
+                }}
+              >
+                HRX WORKOUT
+              </GreenBtn>
             </SlotDiv>
           </Slots>
           <hr></hr>
           <Slots>
-            <SlotDiv>08:00 PM</SlotDiv>
+            <SlotDiv>08:00 AM</SlotDiv>
             <SlotDiv>
-              <GreenBtn>HRX WORKOUT</GreenBtn>
+              <GreenBtn
+                onClick={() => {
+                  if (!isLoggedIn) {
+                    handleHide();
+                  } else {
+                    handleBookPop();
+                  }
+                }}
+              >
+                HRX WORKOUT
+              </GreenBtn>
             </SlotDiv>
           </Slots>
           <hr></hr>
           <Slots>
-            <SlotDiv>08:00 PM</SlotDiv>
+            <SlotDiv>09:00 AM</SlotDiv>
             <SlotDiv>
-              <GreenBtn>HRX WORKOUT</GreenBtn>
+              <GreenBtn
+                onClick={() => {
+                  if (!isLoggedIn) {
+                    handleHide();
+                  } else {
+                    handleBookPop();
+                  }
+                }}
+              >
+                HRX WORKOUT
+              </GreenBtn>
             </SlotDiv>
           </Slots>
           <hr></hr>
           <Slots>
-            <SlotDiv>08:00 PM</SlotDiv>
+            <SlotDiv>04:00 PM</SlotDiv>
             <SlotDiv>
-              <GreenBtn>HRX WORKOUT</GreenBtn>
+              <GreenBtn
+                onClick={() => {
+                  if (!isLoggedIn) {
+                    handleHide();
+                  } else {
+                    handleBookPop();
+                  }
+                }}
+              >
+                HRX WORKOUT
+              </GreenBtn>
             </SlotDiv>
           </Slots>
           <hr></hr>
           <Slots>
-            <SlotDiv>08:00 PM</SlotDiv>
+            <SlotDiv>05:00 PM</SlotDiv>
             <SlotDiv>
-              <GreenBtn>HRX WORKOUT</GreenBtn>
+              <GreenBtn
+                onClick={() => {
+                  if (!isLoggedIn) {
+                    handleHide();
+                  } else {
+                    handleBookPop();
+                  }
+                }}
+              >
+                HRX WORKOUT
+              </GreenBtn>
             </SlotDiv>
           </Slots>
           <hr></hr>
           <Slots>
-            <SlotDiv>08:00 PM</SlotDiv>
+            <SlotDiv>06:00 PM</SlotDiv>
             <SlotDiv>
-              <GreenBtn>HRX WORKOUT</GreenBtn>
+              <GreenBtn
+                onClick={() => {
+                  if (!isLoggedIn) {
+                    handleHide();
+                  } else {
+                    handleBookPop();
+                  }
+                }}
+              >
+                HRX WORKOUT
+              </GreenBtn>
             </SlotDiv>
           </Slots>
           <hr></hr>
           <Slots>
-            <SlotDiv>08:00 PM</SlotDiv>
+            <SlotDiv>07:00 PM</SlotDiv>
             <SlotDiv>
-              <GreenBtn>HRX WORKOUT</GreenBtn>
+              <GreenBtn
+                onClick={() => {
+                  if (!isLoggedIn) {
+                    handleHide();
+                  } else {
+                    handleBookPop();
+                  }
+                }}
+              >
+                HRX WORKOUT
+              </GreenBtn>
             </SlotDiv>
           </Slots>
           <hr></hr>
