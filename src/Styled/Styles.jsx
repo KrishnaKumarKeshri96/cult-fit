@@ -10,7 +10,10 @@ export const WrapperDiv = styled.div`
   flex-direction: row;
   justify-content: space-between;
   // border: solid black 2px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 27f1af8 (1st)
   margin-left: 5%;
   margin-right: 5%;
 `;
@@ -22,7 +25,11 @@ export const PosterDiv = styled.div`
     height: 50%;
     margin-top: 0px;
   }
+<<<<<<< HEAD
   position: absolute;
+=======
+  position: fixed;
+>>>>>>> 27f1af8 (1st)
   height: 359px;
   width: 538px;
   // border: red dashed 2px;
@@ -41,10 +48,17 @@ export const ContentDiv = styled.div`
   }
   // height: 700px;
   // width: 600px;
+<<<<<<< HEAD
   // border: green solid 1px;
   float: right;
   margin-left: 620px;
   margin-top: 100px;
+=======
+  border: green solid 1px;
+  float: right;
+  margin-left: 620px;
+  margin-top: 50px;
+>>>>>>> 27f1af8 (1st)
 `;
 
 export const SubHead = styled.div`
@@ -82,8 +96,11 @@ export const PurpleButton = styled.button`
   border: none;
   height: 30px;
   border-radius: 15px;
+<<<<<<< HEAD
   padding-left: 10px;
   padding-right: 10px;
+=======
+>>>>>>> 27f1af8 (1st)
 `;
 
 export const BookClass = styled.button`
@@ -145,6 +162,7 @@ export const BCrumbs = styled.div`
 
 export const SelectCenters = styled.div`
   width: 90%;
+<<<<<<< HEAD
   height: 500px;
   display: block;
   z-index: 2;
@@ -159,6 +177,22 @@ export const SelectCenters = styled.div`
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   border-radius: 10px;
   justify-content: center;
+=======
+  height: 80%;
+  display: block;
+  z-index: 2;
+  background: white;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  transform:translate(-10%,-5%)
+  opacity: 80%;
+  border: black 2px solid;
+  justify-content: center;
+
+
+
+>>>>>>> 27f1af8 (1st)
 `;
 
 export const Cross = styled.img`
@@ -219,6 +253,7 @@ export const DateCard = styled.div`
   display: flex;
   flex-direction: row;
 `;
+<<<<<<< HEAD
 
 export const SmallBanner = styled.div`
   @media (max-width: 768px) {
@@ -321,3 +356,5 @@ export const FilterDiv = styled.div`
     cursor: pointer;
   }
 `;
+=======
+>>>>>>> 27f1af8 (1st)

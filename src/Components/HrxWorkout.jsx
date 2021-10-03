@@ -19,12 +19,17 @@ import {
   Pink,
 } from "../Styled/Styles";
 
+<<<<<<< HEAD
 // import { Map } from "react-store-locator";
+=======
+import { Map } from "react-store-locator";
+>>>>>>> 27f1af8 (1st)
 
 import banner from "../Hrx/PRODUCT_BNR_2020-03-04T11_36_46.png";
 import cross from "../Hrx/cross.png";
 import { Link, useHistory } from "react-router-dom";
 
+<<<<<<< HEAD
 // import { Breadcrumbs } from "@mui/material";
 import { useContext, useState } from "react";
 // import { AppContext } from "../Contexts/AppContext";
@@ -35,6 +40,16 @@ export const HrxWorkout = () => {
   const [chooseCenter, setChooseCenter] = useState(false);
   const handleSelectedCenter = (store) => {
     history.push("/classbooking");
+=======
+import { Breadcrumbs } from "@mui/material";
+import { useState } from "react";
+
+export const HrxWorkout = () => {
+  //   const history = useHistory();
+  const [chooseCenter, setChooseCenter] = useState(false);
+  const handleSelectedCenter = (store) => {
+    // history.push("/workout/classbooking");
+>>>>>>> 27f1af8 (1st)
   };
 
   const locations = [
@@ -143,6 +158,7 @@ export const HrxWorkout = () => {
               <CentersDiv style={{ overflow: "scroll" }}>
                 {locations.map((location) => (
                   <Loc>
+<<<<<<< HEAD
                     <h3
                       style={{
                         textAlign: "left",
@@ -150,6 +166,9 @@ export const HrxWorkout = () => {
                         marginTop: "10px",
                       }}
                     >
+=======
+                    <h3 style={{ textAlign: "left" }}>
+>>>>>>> 27f1af8 (1st)
                       {location.store_name}{" "}
                       <Pink
                         onClick={() =>
@@ -160,9 +179,13 @@ export const HrxWorkout = () => {
                       </Pink>
                     </h3>
 
+<<<<<<< HEAD
                     <p style={{ textAlign: "left", marginBottom: "10px" }}>
                       {location.address}
                     </p>
+=======
+                    <p style={{ textAlign: "left" }}>{location.address}</p>
+>>>>>>> 27f1af8 (1st)
                   </Loc>
                 ))}
               </CentersDiv>
@@ -196,7 +219,11 @@ export const HrxWorkout = () => {
         {/* ===================== */}
 
         <ContentDiv>
+<<<<<<< HEAD
           {/* <BCrumbs>
+=======
+          <BCrumbs>
+>>>>>>> 27f1af8 (1st)
             <Breadcrumbs
               // separator={<NavigateNextIcon fontSize="small" />}
               separator={<Calories> > </Calories>}
@@ -204,14 +231,22 @@ export const HrxWorkout = () => {
             >
               {breadcrumbs}
             </Breadcrumbs>
+<<<<<<< HEAD
           </BCrumbs> */}
+=======
+          </BCrumbs>
+>>>>>>> 27f1af8 (1st)
           {/* <SubHead>Hrx Workout</SubHead> */}
           {/* here starts card */}
 
           <MCard>
+<<<<<<< HEAD
             <h2 style={{ textAlign: "left", marginBottom: "20px" }}>
               HRX Workout
             </h2>
+=======
+            <h2 style={{ textAlign: "left" }}>HRX Workout</h2>
+>>>>>>> 27f1af8 (1st)
             <div
               style={{
                 display: "flex",
@@ -278,6 +313,7 @@ export const HrxWorkout = () => {
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
             <h3
               style={{
                 textAlign: "left",
@@ -288,6 +324,10 @@ export const HrxWorkout = () => {
               BENIFIT
             </h3>
             <p style={{ textAlign: "left", marginBottom: "20px" }}>
+=======
+            <h2 style={{ textAlign: "left" }}>BENIFIT</h2>
+            <p style={{ textAlign: "left" }}>
+>>>>>>> 27f1af8 (1st)
               Core Strength | Full body strength | Muscle Gain | Mobility{" "}
             </p>
 
@@ -295,7 +335,10 @@ export const HrxWorkout = () => {
               style={{
                 display: "flex",
                 flexDirection: "row",
+<<<<<<< HEAD
                 marginBottom: "30px",
+=======
+>>>>>>> 27f1af8 (1st)
               }}
             >
               <PurpleButton>Strength</PurpleButton>
@@ -305,9 +348,13 @@ export const HrxWorkout = () => {
             </div>
           </MCard>
           {/* here ends card */}
+<<<<<<< HEAD
           <h4 style={{ textAlign: "left", marginBottom: "20px" }}>
             A typical HRX WORKOUT Session
           </h4>
+=======
+          <h3 style={{ textAlign: "left" }}>A typical HRX WORKOUT Session</h3>
+>>>>>>> 27f1af8 (1st)
 
           <div style={{ display: "flex", flexDirection: "row" }}>
             <Calories>Begin</Calories>

@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { AppContextProvider } from "./Contextxts/AppContext";
 =======
 >>>>>>> d350fa8 (Added Cart)
@@ -27,6 +28,14 @@ ReactDOM.render(
       </BrowserRouter>
     </CartDataProvider>
 >>>>>>> d350fa8 (Added Cart)
+=======
+
+ReactDOM.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+>>>>>>> 27f1af8 (1st)
   </React.StrictMode>,
   document.getElementById("root")
 );

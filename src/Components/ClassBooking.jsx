@@ -1,12 +1,18 @@
+<<<<<<< HEAD
 // import { Breadcrumbs } from "@mui/material";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 // import { AppContext } from "../Contexts/AppContext";
 
+=======
+import { Breadcrumbs } from "@mui/material";
+import { Link } from "react-router-dom";
+>>>>>>> 27f1af8 (1st)
 import {
   BCrumbs,
   Calories,
   ContentDiv,
+<<<<<<< HEAD
   DatesDiv,
   DatesWrapper,
   DayNameDiv,
@@ -34,6 +40,14 @@ import cross from "../Hrx/cross.png";
 export const ClassBooking = () => {
   // const { chooseCenter, setChooseCenter } = useContext(AppContext);
   const [chooseCenter, setChooseCenter] = useState(false);
+=======
+  PosterDiv,
+  PosterImg,
+  WrapperDiv,
+} from "../Styled/Styles";
+
+export const ClassBooking = () => {
+>>>>>>> 27f1af8 (1st)
   const breadcrumbs = [
     <Link
       underline="hover"
@@ -46,6 +60,7 @@ export const ClassBooking = () => {
     </Link>,
     <Calories>Cult Abids</Calories>,
   ];
+<<<<<<< HEAD
   const handleBookClass = () => {
     setChooseCenter(!chooseCenter);
   };
@@ -170,6 +185,10 @@ export const ClassBooking = () => {
         </>
       )}
 
+=======
+  return (
+    <>
+>>>>>>> 27f1af8 (1st)
       <WrapperDiv>
         <PosterDiv>
           <PosterImg
@@ -188,14 +207,24 @@ export const ClassBooking = () => {
             </div>
             <div style={{ marginRight: "5px" }}>Cult Abids</div>
 
+<<<<<<< HEAD
             <DownArrow onClick={handleBookClass}>
+=======
+            <div>
+>>>>>>> 27f1af8 (1st)
               <img
                 alt="opt"
                 src="https://static.cure.fit/assets/images/down-arrow-icon.svg"
               ></img>
+<<<<<<< HEAD
             </DownArrow>
           </div>
           {/* <BCrumbs>
+=======
+            </div>
+          </div>
+          <BCrumbs>
+>>>>>>> 27f1af8 (1st)
             <Breadcrumbs
               // separator={<NavigateNextIcon fontSize="small" />}
               separator={<Calories> > </Calories>}
@@ -203,6 +232,7 @@ export const ClassBooking = () => {
             >
               {breadcrumbs}
             </Breadcrumbs>
+<<<<<<< HEAD
           </BCrumbs> */}
 
           <DatesWrapper>
@@ -309,6 +339,9 @@ export const ClassBooking = () => {
             </SlotDiv>
           </Slots>
           <hr></hr>
+=======
+          </BCrumbs>
+>>>>>>> 27f1af8 (1st)
         </ContentDiv>
       </WrapperDiv>
     </>
