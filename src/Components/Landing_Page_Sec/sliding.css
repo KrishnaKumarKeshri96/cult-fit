@@ -11,12 +11,13 @@
   align-items: start;
 }
 
-.home_card_section .top_section > img {
+.home_card_section .top_section>img {
   height: 50px;
   font-family: "Brandon Text Bold";
   color: #333;
 }
-.home_card_section .top_section > p {
+
+.home_card_section .top_section>p {
   font-size: 14.1px;
   font-family: "Brandon Text Regular";
   color: #6c6c6c;
@@ -73,12 +74,12 @@
   color: white;
 }
 
-.cards > div h3 {
+.cards>div h3 {
   position: relative;
   font-size: 18px;
 }
 
-.cards > div .content {
+.cards>div .content {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -92,12 +93,12 @@
   align-items: flex-start;
 }
 
-.cards > .card1 .content {
+.cards>.card1 .content {
   opacity: 1;
   transform: translateX(0px);
 }
 
-.cards > div .content p {
+.cards>div .content p {
   font-family: "Brandon Text Regular";
   font-size: 14px;
   line-height: 30px;
@@ -119,7 +120,7 @@
   transform: translateY(-4px);
 }
 
-.cards > div:hover {
+.cards>div:hover {
   cursor: pointer;
 }
 
@@ -134,34 +135,30 @@
 }
 
 .card1 {
-  transform: translateY(0px);
-  opacity: 1;
+  transform: translateY(100px);
+  opacity: 0;
   transition: all 0.3s ease;
   will-change: transform, opacity;
 }
 
 .card2 {
-  transform: translateY(0px);
-  opacity: 1;
+  transform: translateY(100px);
+  opacity: 0;
   transition: all 0.3s ease 0.1s;
   will-change: transform, opacity;
 }
 
 .card3 {
-  transform: translateY(0px);
-  opacity: 1;
+  transform: translateY(50px);
+  opacity: 0;
   transition: all 0.3s ease 0.22s;
   will-change: transform, opacity;
-}
-
-.is_visible {
-  opacity: 1;
-  transform: translateY(0px);
 }
 
 /* Responsive
 /* For 1300px and lower */
 @media only screen and (max-width: 1300px) {
+
   /* HOME CARDS SECTION */
   .home_card_section {
     margin-top: 60px;
@@ -171,6 +168,7 @@
 
 /* For 1000px and lower */
 @media only screen and (max-width: 1000px) {
+
   /* HOME CARDS SECTION */
   .home_card_section {
     margin-top: 60px;
@@ -191,7 +189,7 @@
     font-size: 18px;
   }
 
-  .home_card_section .top_section > p {
+  .home_card_section .top_section>p {
     font-size: 13px;
   }
 
@@ -216,14 +214,14 @@
     padding: 30px;
   }
 
-  .cards > div .content {
+  .cards>div .content {
     width: 60%;
     margin-top: 10px;
     gap: 10px;
     transform: translateY(200px);
   }
 
-  .cards > div .content p {
+  .cards>div .content p {
     font-size: 12px;
     line-height: 1.6;
   }

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styles from "./CultPacks.module.css";
 import DateSelector from "./DateSelector";
 import { Navbar } from "../Navbar/Navbar";
