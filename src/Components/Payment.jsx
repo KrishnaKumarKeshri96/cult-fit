@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Payment = ({ hide, setHide, total }) => {
+const Payment = ({ hide, setHide, total, item }) => {
   console.log("hide:", hide);
   return (
     <PaymentDiv display={hide ? "none" : "block"}>
@@ -19,7 +19,7 @@ const Payment = ({ hide, setHide, total }) => {
           <h3>Payment Option</h3>
           <div className="amount_section">
             <div>
-              <h4>3 Months cultpass BLACK</h4>
+              <h4>{item}</h4>
               <p>Incl. of all taxes</p>
             </div>
             <h3>₹ {total}</h3>

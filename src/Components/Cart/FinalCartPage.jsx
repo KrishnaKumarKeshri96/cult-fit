@@ -29,7 +29,7 @@ export const FinalCartPage = () => {
   useEffect(() => {
     let priceT = 0;
     let actualP = 0;
-    dataM.map((e) => {
+    dataM.forEach((e) => {
       priceT += e.price * e.total;
       actualP += e.actualPrice * e.total;
     });
@@ -41,7 +41,12 @@ export const FinalCartPage = () => {
   return (
     <>
       <Login hide={login} handleHide={handleHide} />
-      <Payment hide={payment} setHide={setPayment} total={actualPay} />
+      <Payment
+        hide={payment}
+        setHide={setPayment}
+        total={actualPay}
+        item={"Cart Value"}
+      />
       <Navbar></Navbar>
       {dataM.length === 0 || (dataM.length === 1 && dataM[0].total === 0) ? (
         <h1
