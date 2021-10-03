@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Cult.fit Clone (MERN Stack)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**CultFit** is a health and fitness company offering digital and offline experiences across fitness, nutrition, and mental well-being. With the aim to make fitness fun and easy, **CultFit** gives workouts a whole new meaning with a range of trainer-led, group workout classes.
 
-## Available Scripts
+In this project we have tried to make a look alike clone of cure.fit. With our efforts and the technology stack, that we have learned so far in the masai school, we were able to clone the front end with high precision and quality.
+This Project is build as part of Masai School (30 weeks Bootcamp) Curriculum project and completed in duration of 6 days.
 
-In the project directory, you can run:
+To run this project, you will need to run:
 
-### `npm start`
+```bash
+ 1. backend-cultfit directory - npm run server
+ 2. cult-fit directory - npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+User Side:
 
-### `npm test`
+- User can browse cult store
+- User can find products category wise
+- User can view details of selected products
+- User Sign in Feature
+- User can browse the services provided by cultfit and manage subscriptions
+- User can view gym and buy passes
+- User will stay Logged in even after refresh until we log out
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Backend Side:
 
-### `npm run build`
+- Can post new product in database
+- Google Auth
+- Get request with filters
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Inside cult-fit & backeend-cultfit install with npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  npm install
+```
 
-### `npm run eject`
+## Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Homepage**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747270-e7c3721f-c017-40c2-bd66-81c46cfb4019.png">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Login**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747560-46abf013-f539-469b-b671-ae89fb6bcaf7.png">
 
-## Learn More
+**Login With Google**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747583-c8f4cfeb-8d64-44a8-94cb-b95d912eb3d8.png">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Store Landing page by Category**
 
-### Code Splitting
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747272-044c48bc-2b11-4edf-93dd-da9cb2edea15.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Select by Category**
 
-### Analyzing the Bundle Size
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747273-50691cc4-3abf-4a04-bbcc-18458e81a8b4.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Product Details Page**
 
-### Making a Progressive Web App
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747264-130b7980-25d1-43cd-85a3-f14ba3f0e3fd.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Cart**
 
-### Advanced Configuration
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747267-bd39a64f-e7fa-484d-8d13-41486876fa89.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Cult Landing Page**
 
-### Deployment
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747268-21cb8782-9a16-434a-8f44-85453087c9bf.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Cult Free Training Booking**
 
-### `npm run build` fails to minify
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747269-c5d0ccc6-79a7-450d-8eb1-4dee049c50c9.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Select Location**
+
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747824-e1a96a5e-f4a7-4824-875e-b09d76647d91.png">
+
+**Select Timing**
+
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747652-27f3a2f6-0141-4b34-94e3-cf95e8930237.png">
+
+**Subscription Detail Page**
+
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747655-5d9a28e7-3297-4ab0-bc83-0bd44b5a9d8c.png">
+
+**Subscription Purchase Cart**
+
+<img width="1440" alt="Screenshot 2021-10-21" src="https://user-images.githubusercontent.com/86410127/135747657-1786d90a-ff88-4848-8403-a6f217f1de4f.png">
+
+## Tech Stack
+
+**Client:** React, CSS
+
+**Server:** Node, Express, MongoDb, Mongoose
+
+## Libraries Used
+
+**Client:** Styled-Components, Axios, React-Datepicker,React-Icons,React-Slick,Slick-Carousel
+
+**Server:** Google-Auth-Library
+
+## Authors
+
+- Krishna Kumar Keshri - [@KrishnaKumarKeshri96](https://github.com/KrishnaKumarKeshri96)
+- Srikanth Reddy [@SrikanthReddyBV](https://github.com/SrikanthReddyBV)
+- Hardik Thummar [@HardikThummar97](https://github.com/HardikThummar97)
+<!-- - Sagar Biswas [@SagarBIS](https://github.com/)  -->
+
+## Acknowledgements
+
+- [Masai School](https://www.masaischool.com/)
+- [Dhaval Chheda](https://github.com/kiddodhaval)
+- [Prabhanjan](https://github.com/Sparkenstein)
