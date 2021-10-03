@@ -1,23 +1,49 @@
 import "./herosec.css";
 import styled from "styled-components";
+import React, { useState, useEffect, useRef } from "react";
 // import { useEffect, useState } from "react";
 // import { CSSTransition } from "react-transition-group";
 
 import { Link } from "react-router-dom";
 
 export const HeroSec = () => {
+  const [seconds, setSeconds] = useState(0);
+  const firstRender = useRef(true);
+
   const SpanD = styled.span`
     display: inline-block;
-
+    transform: translateY(-40px);
+    animation: slidedown 3.2s infinite;
     color: #00abe9;
   `;
+
+  useEffect(() => {
+    if (firstRender.current === true) {
+      firstRender.current = false;
+      return;
+    }
+
+    const interval = setInterval(() => {
+      setSeconds((seconds) => {
+        if (seconds === 2) {
+          return 0;
+        } else {
+          return seconds + 1;
+        }
+      });
+    }, 3200);
+    return () => clearInterval(interval);
+  });
 
   return (
     <>
       <div className="hero_section container">
         <div className="left_section">
           <h2>
-            For the <SpanD>love</SpanD>
+            For the{" "}
+            <SpanD>
+              {seconds === 0 ? "Love " : seconds === 1 ? "Ease " : "Fun "}
+            </SpanD>{" "}
             of fit.
           </h2>
           <p>
