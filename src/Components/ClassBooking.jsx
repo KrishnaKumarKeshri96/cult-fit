@@ -1,7 +1,7 @@
 // import { Breadcrumbs } from "@mui/material";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-// import { AppContext } from "../Contexts/AppContext";
+import { AppContext } from "../Contextxts/AppContext";
 
 import {
   BCrumbs,
@@ -30,10 +30,21 @@ import {
   Pink,
 } from "../Styled/Styles";
 import cross from "../Hrx/cross.png";
+import { Login } from "./Login/Login";
+import { BookPopUp } from "./BookPopUP";
 
 export const ClassBooking = () => {
-  // const { chooseCenter, setChooseCenter } = useContext(AppContext);
+  const { isLoggedIn, history } = useContext(AppContext);
   const [chooseCenter, setChooseCenter] = useState(false);
+  const [hide, setHide] = useState(true);
+  const [bookPop, setBookPop] = useState(true);
+  const handleHide = () => {
+    setHide(!hide);
+  };
+
+  const handleBookPop = () => {
+    setBookPop(!bookPop);
+  };
   const breadcrumbs = [
     <Link
       underline="hover"
@@ -54,7 +65,14 @@ export const ClassBooking = () => {
     // history.push("/workout/classbooking");
     setChooseCenter(!chooseCenter);
   };
-
+  const handleBtn = () => {
+    if (isLoggedIn) {
+      //redirect to thank you
+      history.push("/thanks");
+    } else {
+      handleHide();
+    }
+  };
   const locations = [
     {
       store_name: "Cult Abids",
@@ -116,6 +134,12 @@ export const ClassBooking = () => {
 
   return (
     <>
+      <BookPopUp
+        hide={bookPop}
+        handleHide={handleBookPop}
+        handleBtn={handleBtn}
+      ></BookPopUp>
+      <Login hide={hide} handleHide={handleHide}></Login>
       {chooseCenter && (
         <>
           <SelectCenters>
@@ -256,7 +280,17 @@ export const ClassBooking = () => {
           <Slots>
             <SlotDiv>08:00 PM</SlotDiv>
             <SlotDiv>
-              <GreenBtn>HRX WORKOUT</GreenBtn>
+              <GreenBtn
+                onClick={() => {
+                  if (!isLoggedIn) {
+                    handleHide();
+                  } else {
+                    handleBookPop();
+                  }
+                }}
+              >
+                HRX WORKOUT
+              </GreenBtn>
             </SlotDiv>
           </Slots>
           <hr></hr>

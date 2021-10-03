@@ -60,9 +60,19 @@ export const Navbar = () => {
           <Link>Bangalore</Link>
           {isLoggedIn ? (
             <>
-              <img src={userImg} alt="" />
+              {/* <img src={userImg} alt="" /> */}
+              {console.log(userData.picture)}
               <div style={{ cursor: "pointer" }} onClick={handleLogout}>
-                {userData.name}
+                <img
+                  style={{
+                    height: "30px",
+                    width: "30px",
+                    borderRadius: "15px",
+                  }}
+                  src={userData.picture}
+                  alt=""
+                />
+                {userData.given_name}
               </div>
             </>
           ) : (
