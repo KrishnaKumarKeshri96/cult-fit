@@ -11,6 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+<<<<<<< HEAD
 
 /* Variables */
 /* :root {
@@ -80,3 +81,8 @@ li {
   border: none !important;
   background: #ffffff !important;
 }
+=======
+/* .grid-img {
+  min-height: fit-content;
+} */
+>>>>>>> 016fa68 (First commit)

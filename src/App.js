@@ -1,5 +1,6 @@
 import "./App.css";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Switch, Route } from "react-router-dom";
 import Cult from "./Components/cult/Cult";
 import CultPacks from "./Components/cultPacks/CultPacks";
@@ -18,6 +19,9 @@ import { FinalCartPage } from "./Components/Cart/FinalCartPage";
 // import { PrivateRoute } from "./Components/PrivateRoute/PrivateRoute";
 =======
 >>>>>>> d350fa8 (Added Cart)
+=======
+import Store from "./components/store/Store";
+>>>>>>> 016fa68 (First commit)
 
 function App() {
   return (
@@ -119,6 +123,7 @@ function App() {
 
   return (
     <div className="App">
+<<<<<<< HEAD
       {/* <GoogleLogin
         clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
         buttonText="Log in with Google"
@@ -147,6 +152,9 @@ function App() {
 
       <ClassBooking></ClassBooking>
 >>>>>>> 27f1af8 (1st)
+=======
+      <Store />
+>>>>>>> 016fa68 (First commit)
     </div>
   );
 }
