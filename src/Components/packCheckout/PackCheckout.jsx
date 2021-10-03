@@ -200,4 +200,5 @@ const Button = styled.div`
   width: fit-content;
   margin: 5px 0 5px auto;
   color: #ffffff;
+  cursor: pointer;
 `;

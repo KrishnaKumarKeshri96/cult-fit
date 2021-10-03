@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Payment = ({ hide, setHide, total, item }) => {
   console.log("hide:", hide);
@@ -41,67 +42,83 @@ const Payment = ({ hide, setHide, total, item }) => {
             </div>
 
             <div>
-              <img
-                src="https://static.cure.fit/assets/images/paytm_v1.svg"
-                alt=""
-              />
-              <h4>Link Account</h4>
+              <Link to="/thanks">
+                <img
+                  src="https://static.cure.fit/assets/images/paytm_v1.svg"
+                  alt=""
+                />
+                <h4>Link Account</h4>
+              </Link>
             </div>
 
             <div>
-              <img
-                src="https://static.cure.fit/assets/images/paytm_v1.svg"
-                alt=""
-              />
-              <h4>Credit / Debit Card</h4>
+              <Link to="/thanks">
+                <img
+                  src="https://static.cure.fit/assets/images/paytm_v1.svg"
+                  alt=""
+                />
+                <h4>Credit / Debit Card</h4>
+              </Link>
             </div>
 
             <div>
-              <img
-                src="https://static.cure.fit/assets/images/paytm_v1.svg"
-                alt=""
-              />
-              <h4>Credit Card EMI</h4>
+              <Link to="/thanks">
+                <img
+                  src="https://static.cure.fit/assets/images/paytm_v1.svg"
+                  alt=""
+                />
+                <h4>Credit Card EMI</h4>
+              </Link>
             </div>
 
             <div>
-              <img
-                src="https://static.cure.fit/assets/images/paytm_v1.svg"
-                alt=""
-              />
-              <h4>UPI</h4>
+              <Link to="/thanks">
+                <img
+                  src="https://static.cure.fit/assets/images/paytm_v1.svg"
+                  alt=""
+                />
+                <h4>UPI</h4>
+              </Link>
             </div>
 
             <div>
-              <img
-                src="https://static.cure.fit/assets/images/paytm_v1.svg"
-                alt=""
-              />
-              <h4>PhonePe/Bhim UPI</h4>
+              <Link to="/thanks">
+                <img
+                  src="https://static.cure.fit/assets/images/paytm_v1.svg"
+                  alt=""
+                />
+                <h4>PhonePe/Bhim UPI</h4>
+              </Link>
             </div>
 
             <div>
-              <img
-                src="https://static.cure.fit/assets/images/paytm_v1.svg"
-                alt=""
-              />
-              <h4>Credit Card EMI</h4>
+              <Link to="/thanks">
+                <img
+                  src="https://static.cure.fit/assets/images/paytm_v1.svg"
+                  alt=""
+                />
+                <h4>Credit Card EMI</h4>
+              </Link>
             </div>
 
             <div>
-              <img
-                src="https://static.cure.fit/assets/images/paytm_v1.svg"
-                alt=""
-              />
-              <h4>Credit Card EMI</h4>
+              <Link to="/thanks">
+                <img
+                  src="https://static.cure.fit/assets/images/paytm_v1.svg"
+                  alt=""
+                />
+                <h4>Credit Card EMI</h4>
+              </Link>
             </div>
 
             <div>
-              <img
-                src="https://static.cure.fit/assets/images/paytm_v1.svg"
-                alt=""
-              />
-              <h4>Credit Card EMI</h4>
+              <Link to="/thanks">
+                <img
+                  src="https://static.cure.fit/assets/images/paytm_v1.svg"
+                  alt=""
+                />
+                <h4>Credit Card EMI</h4>
+              </Link>
             </div>
 
             <div>
