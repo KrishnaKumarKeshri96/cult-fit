@@ -4,10 +4,19 @@ import { useContext, useState, useEffect } from "react";
 
 import { Navbar } from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
+import { AppContext } from "../../Contextxts/AppContext";
+import { Login } from "../Login/Login";
+import Payment from "../Payment";
 
 export const FinalCartPage = () => {
   const { dataM, handleCount } = useContext(CartData);
   console.log("dataM:", dataM);
+  const { isLoggedIn } = useContext(AppContext);
+  const [login, setLogin] = useState(true);
+  const [payment, setPayment] = useState(true);
+  const handleHide = () => {
+    setLogin(true);
+  };
 
   const [totalPrice, setTotalprice] = useState(0);
   console.log("totalPrice:", totalPrice);
@@ -31,6 +40,8 @@ export const FinalCartPage = () => {
 
   return (
     <>
+      <Login hide={login} handleHide={handleHide} />
+      <Payment hide={payment} setHide={setPayment} total={actualPay} />
       <Navbar></Navbar>
       {dataM.length === 0 || (dataM.length === 1 && dataM[0].total === 0) ? (
         <h1
@@ -127,7 +138,12 @@ export const FinalCartPage = () => {
                 <h3 id="total_payable">&#8377; {actualPay} </h3>
               </div>
               <div className="cart__right__purchase__row_last">
-                <button className="cart__right__purchase__row__button">
+                <button
+                  onClick={() => {
+                    isLoggedIn ? setPayment(false) : setLogin(false);
+                  }}
+                  className="cart__right__purchase__row__button"
+                >
                   Pay and Proceed
                 </button>
               </div>

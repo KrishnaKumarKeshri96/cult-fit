@@ -1,8 +1,27 @@
 import { Link, useHistory } from "react-router-dom";
 import arrow from "../../images/back-arrow-pink.svg";
 import "./sliding.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
+// identify if element is in viewport function
+function useOnScreen(ref) {
+
+  const [isIntersecting, setIntersecting] = useState(false)
+
+  const observer = new IntersectionObserver(
+    ([entry]) => setIntersecting(entry.isIntersecting),{rootMargin:"0px"}
+  )
+
+  useEffect(() => {
+    observer.observe(ref.current)
+    // Remove the observer as soon as the component is unmounted
+    return () => { observer.disconnect() }
+  }, [])
+
+  return isIntersecting
+}
+
+// for getting window width
 function getWindowDimensions() {
   const { innerWidth: width } = window;
   return {
@@ -34,6 +53,29 @@ export const SliderCardHomePAge = ({
   description,
 }) => {
   const { width } = useWindowDimensions();
+  const ref = useRef();
+  const ref2 = useRef();
+  const ref3 = useRef();
+  const isVisible = useOnScreen(ref) // Trigger if 200px is visible from the element
+  const isVisible2 = useOnScreen(ref2) // Trigger if 200px is visible from the element
+  const isVisible3 = useOnScreen(ref3) // Trigger if 200px is visible from the element
+
+
+  if(isVisible) {
+    ref.current.style.opacity = 1;
+    ref.current.style.transform = "translateY(0px)";
+    console.log("1");
+  }
+  if(isVisible2) {
+    ref2.current.style.opacity = 1;
+    ref2.current.style.transform = "translateY(0px)";
+    console.log("2");
+  }
+  if(isVisible3) {
+    ref3.current.style.opacity = 1;
+    ref3.current.style.transform = "translateY(0px)";
+    console.log("3");
+  }
 
   const history = useHistory();
   const handleCard1 = (e) => {
@@ -124,7 +166,7 @@ export const SliderCardHomePAge = ({
 
       <div className="slider_section">
         <div className="cards">
-          <div className="card card1 show_on_scroll">
+          <div ref={ref} className="card card1 show_on_scroll">
             <img
               className="card1img"
               src={products.img[0]}
@@ -147,7 +189,7 @@ export const SliderCardHomePAge = ({
             </div>
           </div>
 
-          <div className="card card2 show_on_scroll">
+          <div ref={ref2} className="card card2 show_on_scroll">
             <img
               src={products.img[1]}
               alt=""
@@ -162,7 +204,7 @@ export const SliderCardHomePAge = ({
             </div>
           </div>
 
-          <div className="card card3 show_on_scroll">
+          <div ref={ref3} className="card card3 show_on_scroll">
             <img
               src={products.img[2]}
               alt=""

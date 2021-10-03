@@ -16,7 +16,7 @@ export const AppContextProvider = ({ children }) => {
   }, []);
 
   const getDataById = async (id) => {
-    const res = await fetch(`http://localhost:2222/users/me/${id}`);
+    const res = await fetch(`http://localhost:8080/users/me/${id}`);
     console.log(res);
     const user = await res.json();
     console.log(user);
@@ -26,7 +26,7 @@ export const AppContextProvider = ({ children }) => {
   const handleLogin = async (googleUser) => {
     const { tokenId } = googleUser;
 
-    const res = await fetch("http://localhost:2222/users/api/v2/auth/google", {
+    const res = await fetch("http://localhost:8080/users/api/v2/auth/google", {
       method: "POST",
       body: JSON.stringify({
         token: tokenId,
