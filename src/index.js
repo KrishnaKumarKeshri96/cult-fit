@@ -4,11 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+<<<<<<< HEAD
 import { AppContextProvider } from "./Contextxts/AppContext";
+=======
+>>>>>>> d350fa8 (Added Cart)
 import { CartDataProvider } from "../src/Components/Context/CartContext";
 
 ReactDOM.render(
   <React.StrictMode>
+<<<<<<< HEAD
     <BrowserRouter>
       <AppContextProvider>
         <CartDataProvider>
@@ -16,6 +20,13 @@ ReactDOM.render(
         </CartDataProvider>
       </AppContextProvider>
     </BrowserRouter>
+=======
+    <CartDataProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </CartDataProvider>
+>>>>>>> d350fa8 (Added Cart)
   </React.StrictMode>,
   document.getElementById("root")
 );

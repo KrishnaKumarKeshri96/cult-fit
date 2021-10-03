@@ -7,7 +7,10 @@ import { Footer } from "../Footer/Footer";
 
 export const FinalCartPage = () => {
   const { dataM, handleCount } = useContext(CartData);
+<<<<<<< HEAD
   console.log("dataM:", dataM);
+=======
+>>>>>>> d350fa8 (Added Cart)
 
   const [totalPrice, setTotalprice] = useState(0);
   console.log("totalPrice:", totalPrice);
@@ -15,23 +18,36 @@ export const FinalCartPage = () => {
   console.log("actualPay:", actualPay);
   const [discount, setDiscount] = useState(0);
   console.log("discount:", discount);
+<<<<<<< HEAD
   const [counter, setCounter] = useState(true);
+=======
+>>>>>>> d350fa8 (Added Cart)
 
   useEffect(() => {
     let priceT = 0;
     let actualP = 0;
     dataM.map((e) => {
+<<<<<<< HEAD
       priceT += e.price * e.total;
       actualP += e.actualPrice * e.total;
+=======
+      priceT += e.price;
+      actualP += e.actualPrice;
+>>>>>>> d350fa8 (Added Cart)
     });
     setTotalprice(priceT);
     setActualpay(actualP);
     setDiscount(priceT - actualP);
+<<<<<<< HEAD
   }, [dataM, counter]);
+=======
+  }, [dataM]);
+>>>>>>> d350fa8 (Added Cart)
 
   return (
     <>
       <Navbar></Navbar>
+<<<<<<< HEAD
       {dataM.length === 0 || (dataM.length === 1 && dataM[0].total === 0) ? (
         <h1
           style={{
@@ -44,10 +60,14 @@ export const FinalCartPage = () => {
           YOUR CART IS EMPTY
         </h1>
       ) : (
+=======
+      {dataM.length !== 0 ? (
+>>>>>>> d350fa8 (Added Cart)
         <div className="cart">
           <div className="cart__left">
             <div className="cart__left__product">
               <h3 style={{ marginBottom: "30px" }}>Cultgear Order Summary</h3>
+<<<<<<< HEAD
               {dataM
                 .filter((e) => {
                   return e.total !== 0;
@@ -98,6 +118,52 @@ export const FinalCartPage = () => {
                     <div style={{ marginBottom: "40px" }}></div>
                   </>
                 ))}
+=======
+              {dataM.map((e) => (
+                <>
+                  <div key={e._id} className="cart__left__product__order">
+                    <div className="cart__left__product__order__desc">
+                      <img src={e.img} alt="product" />
+                      <div className="order__desc">
+                        <h4>CULTSPORT</h4>
+                        <p>{e.name}</p>
+                        <p>Size: {e.size}</p>
+                        <div className="order__cost">
+                          <h4>&#8377; {e.actualPrice}</h4>
+                          <div
+                            className="order__cost__btn"
+                            id="order__cost__btn"
+                          >
+                            {/* PLEASE DON'T DELETE THE EMPTY DIVS INSIDE THIS */}
+                            <div></div>
+                            <button
+                              style={{ padding: "5px", cursor: "pointer" }}
+                              onClick={() => {
+                                handleCount(e, -1);
+                              }}
+                            >
+                              -
+                            </button>{" "}
+                            <div></div> <h5>{e.total}</h5> <div></div>{" "}
+                            <button
+                              style={{ padding: "5px", cursor: "pointer" }}
+                              onClick={() => {
+                                handleCount(e, 1);
+                              }}
+                            >
+                              +
+                            </button>
+                            <div></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="cart__left__product__order__cross"></div>
+                    </div>
+                  </div>
+                  <div style={{ marginBottom: "40px" }}></div>
+                </>
+              ))}
+>>>>>>> d350fa8 (Added Cart)
 
               <hr />
             </div>
@@ -134,6 +200,20 @@ export const FinalCartPage = () => {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
+=======
+      ) : (
+        <h1
+          style={{
+            alignItems: "center",
+            justifyContent: "center",
+            display: "flex",
+            margin: "200px",
+          }}
+        >
+          YOUR CART IS EMPTY
+        </h1>
+>>>>>>> d350fa8 (Added Cart)
       )}
 
       <Footer></Footer>

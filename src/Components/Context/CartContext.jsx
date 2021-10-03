@@ -12,7 +12,10 @@ export const CartDataProvider = ({ children }) => {
     for (let i = 0; i < dataM.length; i++) {
       if (dataM[i]._id === data._id && dataM[i].size === data.size) {
         dataM[i].total++;
+<<<<<<< HEAD
         setData([...dataM]);
+=======
+>>>>>>> d350fa8 (Added Cart)
 
         return;
       }

@@ -13,7 +13,10 @@ import { ProductPage } from "./Components/store/StoreProductPage";
 import Store from "./Components/store/Store";
 import { CartPage } from "./Components/Cart/CartPage";
 import { FinalCartPage } from "./Components/Cart/FinalCartPage";
+<<<<<<< HEAD
 // import { PrivateRoute } from "./Components/PrivateRoute/PrivateRoute";
+=======
+>>>>>>> d350fa8 (Added Cart)
 
 function App() {
   return (
@@ -50,9 +53,13 @@ function App() {
         <Route path="/cart">
           <FinalCartPage></FinalCartPage>
         </Route>
+<<<<<<< HEAD
         <Route path="/landing/:id">
           <CartPage></CartPage>
         </Route>
+=======
+
+>>>>>>> d350fa8 (Added Cart)
         <Route>Page Not Found</Route>
       </Switch>
     </div>
