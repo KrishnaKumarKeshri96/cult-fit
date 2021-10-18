@@ -10,9 +10,11 @@ export const LandingPage = () => {
   const [sliding, setSliding] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/brand").then((data) => {
-      setSliding(data.data);
-    });
+    axios
+      .get("https://secure-plateau-49386.herokuapp.com/brand")
+      .then((data) => {
+        setSliding(data.data);
+      });
   }, []);
 
   return (

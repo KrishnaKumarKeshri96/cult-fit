@@ -103,10 +103,12 @@ const Store = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/product/productMain").then((items) => {
-      console.log(items);
-      setItems(items.data);
-    });
+    axios
+      .get("https://secure-plateau-49386.herokuapp.com/product/productMain")
+      .then((items) => {
+        console.log(items);
+        setItems(items.data);
+      });
   }, []);
   return (
     <>

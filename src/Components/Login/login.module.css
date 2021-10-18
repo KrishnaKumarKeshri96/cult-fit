@@ -21,11 +21,10 @@ body {
   flex-direction: column;
   justify-content: center;
   background: white;
-  z-index: 5;
-  opacity: 100%;
+  /* z-index: 5; */
+  /* opacity: 99%; */
   min-width: 300px;
   min-height: 500px;
-
   width: 30%;
   height: auto;
   padding: 1%;

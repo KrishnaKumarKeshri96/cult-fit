@@ -13,7 +13,9 @@ export const ProductPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/product/productMain/${id}`)
+      .get(
+        `https://secure-plateau-49386.herokuapp.com/product/productMain/${id}`
+      )
       .then((data) => {
         setProduct(data.data);
       });

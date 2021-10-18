@@ -5,20 +5,22 @@ import { useState, useEffect, useRef } from "react";
 
 // identify if element is in viewport function
 function useOnScreen(ref) {
-
-  const [isIntersecting, setIntersecting] = useState(false)
+  const [isIntersecting, setIntersecting] = useState(false);
 
   const observer = new IntersectionObserver(
-    ([entry]) => setIntersecting(entry.isIntersecting),{rootMargin:"0px"}
-  )
+    ([entry]) => setIntersecting(entry.isIntersecting),
+    { rootMargin: "0px" }
+  );
 
   useEffect(() => {
-    observer.observe(ref.current)
+    observer.observe(ref.current);
     // Remove the observer as soon as the component is unmounted
-    return () => { observer.disconnect() }
-  }, [])
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
-  return isIntersecting
+  return isIntersecting;
 }
 
 // for getting window width
@@ -56,25 +58,24 @@ export const SliderCardHomePAge = ({
   const ref = useRef();
   const ref2 = useRef();
   const ref3 = useRef();
-  const isVisible = useOnScreen(ref) // Trigger if 200px is visible from the element
-  const isVisible2 = useOnScreen(ref2) // Trigger if 200px is visible from the element
-  const isVisible3 = useOnScreen(ref3) // Trigger if 200px is visible from the element
+  const isVisible = useOnScreen(ref); // Trigger if 200px is visible from the element
+  const isVisible2 = useOnScreen(ref2); // Trigger if 200px is visible from the element
+  const isVisible3 = useOnScreen(ref3); // Trigger if 200px is visible from the element
 
-
-  if(isVisible) {
+  if (isVisible) {
     ref.current.style.opacity = 1;
     ref.current.style.transform = "translateY(0px)";
-    console.log("1");
+    // console.log("1");
   }
-  if(isVisible2) {
+  if (isVisible2) {
     ref2.current.style.opacity = 1;
     ref2.current.style.transform = "translateY(0px)";
-    console.log("2");
+    // console.log("2");
   }
-  if(isVisible3) {
+  if (isVisible3) {
     ref3.current.style.opacity = 1;
     ref3.current.style.transform = "translateY(0px)";
-    console.log("3");
+    // console.log("3");
   }
 
   const history = useHistory();

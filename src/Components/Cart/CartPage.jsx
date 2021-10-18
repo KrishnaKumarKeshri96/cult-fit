@@ -52,9 +52,11 @@ const CartPage = () => {
   // };
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/product/${id}`).then((data) => {
-      setProduct(data.data);
-    });
+    axios
+      .get(`https://secure-plateau-49386.herokuapp.com/product/${id}`)
+      .then((data) => {
+        setProduct(data.data);
+      });
   }, [id]);
   if (redirect) return <Redirect to="/cart"></Redirect>;
 
