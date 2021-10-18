@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Payment = ({ hide, setHide, total, item }) => {
-  console.log("hide:", hide);
+  // console.log("hide:", hide);
   return (
     <PaymentDiv display={hide ? "none" : "block"}>
       <img src="Screenshot.png" alt="" className="backimg" />

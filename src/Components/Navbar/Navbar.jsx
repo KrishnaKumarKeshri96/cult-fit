@@ -61,7 +61,7 @@ export const Navbar = () => {
           {isLoggedIn ? (
             <>
               {/* <img src={userImg} alt="" /> */}
-              {console.log(userData.picture)}
+              {/* {console.log(userData.picture)} */}
               <div style={{ cursor: "pointer" }} onClick={handleLogout}>
                 <img
                   style={{

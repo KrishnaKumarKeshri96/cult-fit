@@ -41,11 +41,11 @@ const CartPage = () => {
   const [size, setSize] = useState("");
   const [redirect, setRedirect] = useState(false);
   const [addTocart, setAddTocart] = useState(true);
-  console.log("size:", size);
+  // console.log("size:", size);
 
   const { dataM, handleDataChange } = useContext(CartData);
-  console.log("handleDataChange:", handleDataChange);
-  console.log("dataM:", dataM);
+  // console.log("handleDataChange:", handleDataChange);
+  // console.log("dataM:", dataM);
 
   // const handleCart = () => {
   //   // size && size!=="All"?"":"q"

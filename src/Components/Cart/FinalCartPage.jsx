@@ -10,7 +10,7 @@ import Payment from "../Payment";
 
 export const FinalCartPage = () => {
   const { dataM, handleCount } = useContext(CartData);
-  console.log("dataM:", dataM);
+  // console.log("dataM:", dataM);
   const { isLoggedIn } = useContext(AppContext);
   const [login, setLogin] = useState(true);
   const [payment, setPayment] = useState(true);
@@ -19,11 +19,11 @@ export const FinalCartPage = () => {
   };
 
   const [totalPrice, setTotalprice] = useState(0);
-  console.log("totalPrice:", totalPrice);
+  // console.log("totalPrice:", totalPrice);
   const [actualPay, setActualpay] = useState(0);
-  console.log("actualPay:", actualPay);
+  // console.log("actualPay:", actualPay);
   const [discount, setDiscount] = useState(0);
-  console.log("discount:", discount);
+  // console.log("discount:", discount);
   const [counter, setCounter] = useState(true);
 
   useEffect(() => {
